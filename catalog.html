@@ -5,92 +5,139 @@
   <title>HTML Academy: Нёрдс</title>
 </head>
 <body>
-<header>
-  <nav>
+<header class="main-header">
+  <nav class="main-navigation">
     <a href="index.html">
-      <img src="img/nerds-logo.svg" width="" height="" alt="">
+      <img src="img/nerds-logo.svg" width="" height="" alt="Логотип Дизайн-студии Нёрдс">
     </a>
-    <ul>
-      <li><a href="#">Студия</a></li>
-      <li><a href="#">Клиенты</a></li>
-      <li><a href="#">Магазин</a></li>
-      <li><a href="#">Контакты</a></li>
+    <ul class="site-navigation">
+      <li><a href="studio.html">Студия</a></li>
+      <li><a href="customer.html">Клиенты</a></li>
+      <li><a>Магазин</a></li>
+      <li><a href="contacts.html">Контакты</a></li>
     </ul>
     <ul>
       <li>
-        <img src="img/cart-icon.svg" width="" height="" alt="">
-        <a href="#">Корзина</a>
+        <img src="img/cart-icon.svg" width="" height="" alt="Корзина">
+        <a class="cart" href="cart.html">Корзина</a>
       </li>
     </ul>
   </nav>
-  <h1>Магазин готовых шаблонов</h1>
+  <h1 class="page.title">Магазин готовых шаблонов</h1>
 </header>
 
-<main>
+<main class="container">
+
   <section>
-    <h2>Сетка</h2>
-    <h3>Стоимость:</h3>
+    <p>Стоимость:</p>
     <form>
-     0 <input type="range" min="0" max="15000"> 15000
+      0 <input type="range" min="0" max="15000"> 15000
     </form>
-      <form action="URL#" method="post">
-        <p>Сетка</p>
-          <input type="radio" name="#" value="Адаптивная"><img src="img/radio-on.svg"><!--тут уверен что просто радиобаттон сделанный в CSS, но есть формать свг - поэтому поставил-->Адаптивная<br>
-          <input type="radio" name="#" value="Фиксированная"><img src="img/radio-off.svg">Фиксированная<br>
-          <input type="radio" name="#" value="Резиновая"><img src="img/radio-off.svg">Резиновая<br>
-      </form>
-
-      <form action="URL" method="post">
-        <p>Особенности</p>
-          <input type="checkbox" checked><img src="img/checkbox-on.svg">Слайдер<br>
-          <input type="checkbox"><img src="img/checkbox-off.svg"> Блок преимуществ<br>
-          <input type="checkbox" checked><img src="img/checkbox-on.svg">Новости<br>
-          <input type="checkbox"><img src="img/checkbox-off.svg">Галерея<br>
-          <input type="checkbox"><img src="img/checkbox-off.svg">Корзина<br>
-      </form>
-
-      <input type="submit" value="Показать"/>
   </section>
 
+
   <section>
-    <h2>Каталог</h2>
+    <h2 class="visually-hidden">Характеристики</h2>
+      <form class="filter" action="URL#" method="get">
 
-    <ul>
+        <fieldset>
+          <legend>Сетка</legend>
+          <ul>
+            <li class="filter-option">
+              <input class="visually-hidden filter-input filter-input-radio" id="adaptive" type="radio" name="version" value="a" checked><img src="img/radio-on.svg">
+              <label for="adaptive">Адаптивная</label>
+            </li>
+            <li class="filter-option">
+              <input class="visually-hidden filter-input filter-input-radio" id="fixed" type="radio" name="version" value="b"><img src="img/radio-off.svg">
+              <label for="fixed">Фиксированная</label>
+            </li>
+            <li class="filter-option">
+              <input class="visually-hidden filter-input filter-input-radio" id="rubber" type="radio" name="version" value="c"><img src="img/radio-off.svg">
+              <label for="rubber">Резиновая</label>
+            </li>
+          </ul>
+        </fieldset>
 
-      <li>
-        <a href="#">
+        <fieldset>
+          <legend>Особенности</legend>
+          <ul>
+            <li class="filter-option">
+              <input class="visually-hidden filter-input filter-input-checkbox" id="slider" name="slide" type="checkbox" checked><img src="img/checkbox-on.svg">
+              <label for="slider">Слайдер</label>
+            </li>
+            <li class="filter-option">
+              <input class="visually-hidden filter-input filter-input-checkbox" id="benefits block" name="benefits bloc" type="checkbox"><img src="img/checkbox-off.svg">
+              <label for="benefits block">Блок преимуществ</label>
+            </li>
+            <li class="filter-option">
+              <input class="visually-hidden filter-input filter-input-checkbox" id="news" name="news" type="checkbox" checked><img src="img/checkbox-on.svg">
+              <label for="news">Новости</label>
+            </li>
+            <li class="filter-option">
+              <input class="visually-hidden filter-input filter-input-checkbox" id="gallery" name="galler" type="checkbox"><img src="img/checkbox-off.svg">
+              <label for="gallery">Галерея</label>
+            </li>
+            <li class="filter-option">
+              <input class="visually-hidden filter-input filter-input-checkbox" id="basket" name="basket" type="checkbox"><img src="img/checkbox-off.svg">
+              <label for="basket">Корзина</label>
+            </li>
+          </ul>
+        </fieldset>
+        <button type="submit" class="filter-button button">Показать</button>
+      </form>
+  </section>
+
+  <section class="catalog">
+    <h2 class="visually-hidden">Каталог</h2>
+
+    <ul class="catalog-list">
+
+      <li class="catalog-item">
+        <h3>
+        <a href="catalog-item.html">
           <img src="img/img-sedona.jpg" width="#" height="#" alt="sedona">
         </a>
+        </h3>
       </li>
 
-      <li>
-          <a href="#">
+      <li class="catalog-item">
+        <h3>
+          <a href="catalog-item.html">
             <img src="img/img-pink.jpg" width="#" height="#" alt="Pink App">
           </a>
+        </h3>
       </li>
 
-      <li>
-          <a href="#">
-            <img src="img/img-barbershop.jpg" width="#" height="#" alt="Barbershop<">
+      <li class="catalog-item">
+        <h3>
+          <a href="catalog-item.html">
+            <img src="img/img-barbershop.jpg" width="#" height="#" alt="Barbershop">
           </a>
+        </h3>
       </li>
 
-      <li>
-        <a href="#">
-          <img src="img/img-mishka.jpg" width="#" height="#" alt="MISHKA">
-        </a>
+      <li class="catalog-item">
+        <h3>
+          <a href="catalog-item.html">
+            <img src="img/img-mishka.jpg" width="#" height="#" alt="MISHKA">
+          </a>
+        </h3>
     </li>
 
-      <li>
-          <a href="#">
+      <li class="catalog-item">
+        <h3>
+          <a href="catalog-item.html">
             <img src="img/img-aplus.jpg" width="#" height="#" alt="A Plus">
           </a>
+        </h3>
       </li>
 
-      <li>
-          <a href="#">
+      <li class="catalog-item">
+        <h3>
+          <a href="catalog-item.html">
             <img src="img/img-kvast.jpg" width="#" height="#" alt="КВАСТ">
           </a>
+        </h3>
       </li>
 
     </ul>
@@ -103,7 +150,7 @@
     </ul>
   </section>
 
-  <section>
+  <section >
     <div class="map.contacts">
       <h4>NЁRDS DESIGN STUDIO</h4>
       <p>191186, Санкт-Петербург,<br>
@@ -111,9 +158,29 @@
 
       <p>тел. +7 (812) 275-75-75</p>
       <a href="#">Напишите нам</a>
-      <img src="img/map.png" width="" height="" alt="Карта">
+      <img src="img/map.png" width="" height="" alt="Офис компании по адресу: Санкт-Петербург,ул. Б. Конюшенная, д. 19/8">
       <img src="img/map-marker.png" width="" height="" alt="Маркер">
     </div>
+  </section>
+
+  <section class="popup">
+    <h3 class="visually-hidden">Напишите нам</h3>
+    <form class="login-form" action="#" method="post">
+      <p>
+        <label class="#" for="user-login">Ваше имя</label>
+        <input class="login-icon-user" id="user-login" type="text" name="login" value="" placeholder="Имя Фамилия">
+      </p>
+      <p>
+        <label class="#" for="user-email">Ваш e-mail</label>
+        <input class="login-icon-email" id="user-email" type="email" name="email" value="" placeholder="email@exaple.com">
+      </p>
+      <p>
+        <label class="#" for="login-text">Текст письма</label>
+        <input class="login-icon-text" id="login-text" type="text" name="text" value="" placeholder="В свободной форме">
+      </p>
+      <button class="button" type="submit">Отправить</button>
+    </form>
+    <button class="close-cross" type="button"><img src="img/close-cross.svg" alt="Закрыть">Закрыть</button>
   </section>
 
 </main>
