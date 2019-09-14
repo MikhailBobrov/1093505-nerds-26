@@ -5,7 +5,7 @@
   <title>HTML Academy: Нёрдс</title>
 </head>
 <body>
-<header class="main-header">
+<header class="main-header"><!--change -->
   <nav class="main-navigation">
     <a href="index.html">
       <img src="img/nerds-logo.svg" width="" height="" alt="Логотип Дизайн-студии Нёрдс">
@@ -28,57 +28,61 @@
 
 <main class="container">
 
-  <section>
-    <p>Стоимость:</p>
-    <form>
-      0 <input type="range" min="0" max="15000"> 15000
-    </form>
-  </section>
+  <section class="catalog-filters">
+    <h2 class="visually-hidden">Список фильтров</h2>
+    <form class="filter" action="URL#" method="get">
+      <fieldset>
+        <legend>Стоимость:</legend>
+        <div class="range"><!--position relative-->
+          <div class="scale"></div><!--зеленая линия будет с position absolute-->
+          <span class="range-min"></span><!--будет с position absolute - top - 0 - left- 0-->
+          <span class="range-max"></span><!--будет с position absolute - top - o - left-70%-->
+          <label for="range-min">от</label>
+          <input type="text" class="" id="range-min" name="range-min">
+          <label for="range-max">до</label>
+          <input type="text" class="" id="range-max" name="range-max">
+        </div>
+      </fieldset>
 
-
-  <section>
-    <h2 class="visually-hidden">Характеристики</h2>
-      <form class="filter" action="URL#" method="get">
-
-        <fieldset>
-          <legend>Сетка</legend>
-          <ul>
-            <li class="filter-option">
-              <input class="visually-hidden filter-input filter-input-radio" id="adaptive" type="radio" name="version" value="a" checked><img src="img/radio-on.svg">
-              <label for="adaptive">Адаптивная</label>
-            </li>
-            <li class="filter-option">
-              <input class="visually-hidden filter-input filter-input-radio" id="fixed" type="radio" name="version" value="b"><img src="img/radio-off.svg">
-              <label for="fixed">Фиксированная</label>
-            </li>
-            <li class="filter-option">
-              <input class="visually-hidden filter-input filter-input-radio" id="rubber" type="radio" name="version" value="c"><img src="img/radio-off.svg">
-              <label for="rubber">Резиновая</label>
-            </li>
-          </ul>
-        </fieldset>
+      <fieldset>
+        <legend>Сетка</legend>
+        <ul>
+          <li class="filter-option">
+            <input class="visually-hidden filter-input filter-input-radio" id="adaptive" type="radio" name="version" value="adaptive" checked><!--для стилизации этих кружочков нужны псевдомэлементы befor-->
+            <label for="adaptive">Адаптивная</label>
+          </li>
+          <li class="filter-option">
+            <input class="visually-hidden filter-input filter-input-radio" id="fixed" type="radio" name="version" value="fixed">
+            <label for="fixed">Фиксированная</label>
+          </li>
+          <li class="filter-option">
+            <input class="visually-hidden filter-input filter-input-radio" id="rubber" type="radio" name="version" value="rubber">
+            <label for="rubber">Резиновая</label>
+          </li>
+        </ul>
+      </fieldset>
 
         <fieldset>
           <legend>Особенности</legend>
           <ul>
             <li class="filter-option">
-              <input class="visually-hidden filter-input filter-input-checkbox" id="slider" name="slide" type="checkbox" checked><img src="img/checkbox-on.svg">
+              <input class="visually-hidden filter-input filter-input-checkbox" id="slider" name="slide" type="checkbox" checked>
               <label for="slider">Слайдер</label>
             </li>
             <li class="filter-option">
-              <input class="visually-hidden filter-input filter-input-checkbox" id="benefits block" name="benefits bloc" type="checkbox"><img src="img/checkbox-off.svg">
-              <label for="benefits block">Блок преимуществ</label>
+              <input class="visually-hidden filter-input filter-input-checkbox" id="benefits" name="benefits" type="checkbox">
+              <label for="benefits">Блок преимуществ</label>
             </li>
             <li class="filter-option">
-              <input class="visually-hidden filter-input filter-input-checkbox" id="news" name="news" type="checkbox" checked><img src="img/checkbox-on.svg">
+              <input class="visually-hidden filter-input filter-input-checkbox" id="news" name="news" type="checkbox" checked>
               <label for="news">Новости</label>
             </li>
             <li class="filter-option">
-              <input class="visually-hidden filter-input filter-input-checkbox" id="gallery" name="galler" type="checkbox"><img src="img/checkbox-off.svg">
+              <input class="visually-hidden filter-input filter-input-checkbox" id="gallery" name="galler" type="checkbox">
               <label for="gallery">Галерея</label>
             </li>
             <li class="filter-option">
-              <input class="visually-hidden filter-input filter-input-checkbox" id="basket" name="basket" type="checkbox"><img src="img/checkbox-off.svg">
+              <input class="visually-hidden filter-input filter-input-checkbox" id="basket" name="basket" type="checkbox">
               <label for="basket">Корзина</label>
             </li>
           </ul>
@@ -87,18 +91,24 @@
       </form>
   </section>
 
-  <section class="catalog">
+  <section class="catalog-list">
     <h2 class="visually-hidden">Каталог</h2>
 
-    <ul class="catalog-list">
+    <ul class="catalog-items">
 
-      <li class="catalog-item">
-        <h3>
-        <a href="catalog-item.html">
+      <li class="catalog-item"><!--position-relative-->
+        <a href="sedona.html">
           <img src="img/img-sedona.jpg" width="#" height="#" alt="sedona">
         </a>
-        </h3>
+
+        <div class="catalog-item-info"><!--position-absolute--><!--hover-->
+          <h4>Sedona</h4>
+            <p>Информ сайт для туристов</p>
+            <a href="#">9 900 <span>руб</span></a>
+        </div>
       </li>
+
+      <!--все остальное также-->
 
       <li class="catalog-item">
         <h3>
@@ -142,14 +152,15 @@
 
     </ul>
 
-    <ul>
-      <li><a>1</a></li>
+    <ul class="pagination">
+      <li class="pagination-item"><a>1</a></li>
       <li><a href="#">2</a></li>
       <li><a href="#">3</a></li>
       <li><a href="#">Следующая</a></li>
     </ul>
   </section>
 
+  <!--скопировать с основной-->
   <section >
     <div class="map.contacts">
       <h4>NЁRDS DESIGN STUDIO</h4>
