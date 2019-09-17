@@ -1,0 +1,261 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #000000;
+  background-color: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-header {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.main-navigation {
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 500;
+  text-transform: uppercase;
+  background-color: white;
+}
+
+.site-navigation {
+  list-style: none;
+}
+
+.site-navigation a {
+  color: black;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus,
+.user-navigation a:hover,
+.user-navigation a:focus {
+  background-color: #f97276;
+}
+
+.slider {
+  width: 1440px;
+  height: 545px;
+  background-color: #eeeeee;
+}
+
+.slider-features,
+.nerds-features {
+  list-style: none;
+}
+
+.slider-features a {
+  color: white;
+}
+/*
+.slider1 {
+  width: 698px;
+  height: 413px;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: url("../img/slide1.png");
+  background-position: top left;
+  background-repeat: no-repeat;
+}
+
+.slider2 {
+  width: 663px;
+  height: 430px;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: url("../img/slide2.png");
+  background-position: top left;
+  background-repeat: no-repeat;
+}
+
+.slider3 {
+  width: 759px;
+  height: 411px;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: url("../img/slide3.png");
+  background-position: top left;
+  background-repeat: no-repeat;
+}
+
+.slider-title {
+  font-size: 55px;
+  font-weight: 500;
+  line-height: 55px;
+}
+
+.slider-text {
+  color: #283136;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+ */
+
+.nerds-item a {
+  width: 241px;
+  height: 24px;
+  color: #000000;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.nerds-item p {
+  width: 268px;
+  height: 45px;
+  color: #283136;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.nerds-item
+.button1 {
+  width: 188px;
+  height: 15px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+  background-color: #fb565a;
+}
+
+.nerds-item
+.button1:hover {
+  background-color: #e74246;
+}
+
+.nerds-item
+.button1:active {
+  background-color: #d7373b;
+}
+
+
+.nerds-item
+.button2 {
+  width: 188px;
+  height: 15px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+  background-color: #00ca74;
+}
+
+.nerds-item
+.button2:hover {
+    background-color:#00bc6c;
+  }
+
+.nerds-item
+.button2:active {
+  background-color: #00aa62;
+}
+
+.nerds-item
+.button3 {
+  width: 188px;
+  height: 15px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+  background-color: #efc84a;
+}
+
+.nerds-item
+.button3:hover {
+  background-color:#eab534;
+}
+
+.nerds-item
+.button3:active {
+  background-color: #e5a722;
+}
+
+
+.nerds-item
+.button3 {
+  width: 188px;
+  height: 15px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+}
+
+
+
+
+
+
+.left-position h3 {
+  font-size: 45px;
+  font-weight: 500;
+  line-height: 45px;
+}
+
+.left-position p {
+
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.left-position h4,
+.right-position h4 {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.left-position-list {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  list-style: none;
+}
+
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.social-button {
+  color: #e1e1e1
+}
+
+.main-footer
+.slogan{
+  width: 651px;
+  height: 38px;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 36px;
+  text-align: center;
+}
+
+.main-footer
+.discount {
+  width: 373px;
+  height: 22px;
+  color: #444444;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
