@@ -13,14 +13,12 @@
     <a class="main-header-logo">
       <img src="img/nerds-logo.svg" width="" height="" alt="Логотип Дизайн-студии Нёрдс">
     </a>
-    <ul class="site-navigation">
-      <li><a href="studio.html">Студия</a></li>
-      <li><a href="customer.html">Клиенты</a></li>
-      <li><a>Магазин</a></li>
-      <li><a href="contacts.html">Контакты</a></li>
-      <li>
-        <a class="basket" href="basket.html">Корзина</a>
-      </li>
+    <ul class="site-navigation reset-list">
+      <li><a class="site-navigation-link" href="studio.html">Студия</a></li>
+      <li><a class="site-navigation-link" href="customer.html">Клиенты</a></li>
+      <li><a class="site-navigation-link">Магазин</a></li>
+      <li><a class="site-navigation-link" href="contacts.html">Контакты</a></li>
+      <li><a class="basket" href="basket.html">Корзина</a></li>
     </ul>
   </nav>
   <h1 class="page-title">Магазин готовых шаблонов</h1>
@@ -30,7 +28,7 @@
 
   <section class="catalog-filters">
     <h2 class="visually-hidden">Список фильтров</h2>
-    <form class="filter" action="URL" method="get">
+    <form class="filter-form" action="URL" method="get">
       <fieldset>
         <legend>Стоимость:</legend>
         <div class="range"><!--position relative-->
@@ -44,9 +42,9 @@
         </div>
       </fieldset>
 
-      <fieldset class="filter">
+      <fieldset>
         <legend>Сетка</legend>
-        <ul>
+        <ul class="reset-list">
           <li class="filter-option">
             <input class="visually-hidden filter-input filter-input-radio" id="adaptive" type="radio" name="version" value="adaptive" checked><!--для стилизации этих кружочков нужны псевдомэлементы befor-->
             <label for="adaptive">Адаптивная</label>
@@ -64,7 +62,7 @@
 
         <fieldset class="filter">
           <legend>Особенности</legend>
-          <ul>
+          <ul class="reset-list">
             <li class="filter-option">
               <input class="visually-hidden filter-input filter-input-checkbox" id="slider" name="slide" type="checkbox" checked>
               <label for="slider">Слайдер</label>
@@ -94,7 +92,7 @@
   <section class="catalog-list">
     <h2 class="visually-hidden">Каталог</h2>
 
-    <ul class="catalog-items">
+    <ul class="catalog-items reset-list">
 
       <li class="catalog-item"><!--position-relative-->
         <a href="sedona.html">
@@ -103,7 +101,7 @@
         <div class="catalog-item-info"><!--position-absolute--><!--hover-->
           <h4>Sedona</h4>
             <p>Информационный сайт для туристов</p>
-              <a href="#">9 900 <span>руб</span></a>
+              <a class="button button-catalog" href="#">9 900 <span>руб</span></a>
         </div>
       </li>
 
@@ -117,7 +115,7 @@
           <h4>Pink App</h4>
             <p>Продуктовый лендинг<br>
               приложения для iOS и Android</p>
-             <a href="#">9 900 <span>руб</span></a>
+                <a class="button button-catalog" href="#">9 900 <span>руб</span></a>
         </div>
       </li>
 
@@ -129,7 +127,7 @@
           <h4>Barbershop</h4>
             <p>Сайт салона красоты.<br>
             Для мужчин, да.</p>
-              <a href="#">9 900 <span>руб</span></a>
+              <a class="button button-catalog" href="#">9 900 <span>руб</span></a>
         </div>
       </li>
 
@@ -141,7 +139,7 @@
           <h4>MISHKA</h4>
             <p>Интернет-магазин<br>
             вязаных игрушек</p>
-              <a href="#">9 900 <span>руб</span></a>
+              <a class="button button-catalog" href="#">9 900 <span>руб</span></a>
         </div>
     </li>
 
@@ -153,7 +151,7 @@
           <h4>A Plus</h4>
             <p>Лендинг курсов повышения<br>
             квалификации</p>
-          <a href="#">9 900 <span>руб</span></a>
+              <a class="button button-catalog" href="#">9 900 <span>руб</span></a>
         </div>
       </li>
 
@@ -165,17 +163,17 @@
           <h4>КВАСТ</h4>
           <p>Промо-сайт производителя<br>
             крафтового кваса</p>
-          <a href="#">9 900 <span>руб</span></a>
+              <a class="button button-catalog" href="#">9 900 <span>руб</span></a>
         </div>
       </li>
 
     </ul>
 
-    <ul class="pagination-list">
-      <li class="pagination-item pagination-item-current"><a>1</a></li>
-      <li class="pagination-item"><a href="#">2</a></li>
-      <li class="pagination-item"><a href="#">3</a></li>
-      <li class="pagination-item"><a href="#">Следующая</a></li>
+    <ul class="pagination-list reset-list">
+      <li><a class="pagination-item-link current">1</a></li>
+      <li><a class="pagination-item-link" href="#">2</a></li>
+      <li><a class="pagination-item-link" href="#">3</a></li>
+      <li><a class="pagination-item-link" href="#">Следующая</a></li>
     </ul>
   </section>
 
@@ -217,18 +215,14 @@
 </main>
 
 <footer class="main-footer">
-  <div class="social">
-    <ul>
-      <li class="social-button"><a href="#"><img src="img/vk-icon.svg" width="" height="" alt="Vkontakte"></a></li>
-      <li class="social-button"><a href="#"><img src="img/fb-icon.svg" width="" height="" alt="Facebook"></a></li>
-      <li class="social-button"><a href="#"><img src="img/insta-icon.svg" width="" height="" alt="Intsagram"></a></li>
-    </ul>
-  </div>
+  <ul class="social-list reset-list">
+    <li class="social-button"><a href="#"><img src="img/vk-icon.svg" width="" height="" alt="Vkontakte"></a></li>
+    <li class="social-button"><a href="#"><img src="img/fb-icon.svg" width="" height="" alt="Facebook"></a></li>
+    <li class="social-button"><a href="#"><img src="img/insta-icon.svg" width="" height="" alt="Intsagram"></a></li>
+  </ul>
   <div class="slogan">
     <p>Давайте дружить, это выгодно!</p>
-  </div>
-  <div class="discount">
-    <p>Скидка 10% для друзей из социальных сетей.</p>
+    <p class="slogan-discount">Скидка 10% для друзей из социальных сетей.</p>
   </div>
 </footer>
 

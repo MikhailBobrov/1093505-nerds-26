@@ -9,13 +9,24 @@ body {
   background-color: white;
 }
 
-
 a {
   text-decoration: none;
 }
 
 .main-header {
   background-color: rgba(0, 0, 0, 0);
+}
+
+.reset-list {
+  list-style: none;
+}
+
+.button {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+  text-transform: uppercase;
 }
 
 .main-navigation {
@@ -26,19 +37,45 @@ a {
   background-color: white;
 }
 
-.site-navigation {
-  list-style: none;
+/*
+.main-header-logo {
+  color: #000000;
 }
 
-.site-navigation a {
+.main-header-logo:hover {
+  color: #303030;
+}
+
+.main-header-logo:active {
+  color: #a7a7a7;
+}
+Вот тут должна быть кликабельная ссылка - изображение - но почему то нет
+ */
+
+.site-navigation-link {
   color: black;
 }
 
-.site-navigation a:hover,
-.site-navigation a:focus,
-.user-navigation a:hover,
-.user-navigation a:focus {
-  background-color: #f97276;
+.site-navigation-link:hover,
+.site-navigation-link:focus {
+  color: #f97276;
+}
+
+.site-navigation-link:active {
+  color: #a7a7a7;
+}
+
+.basket {
+  color: black;
+}
+
+.basket:hover,
+.basket:focus {
+  color: #f97276;
+}
+
+.basket:active {
+  color: #a7a7a7;
 }
 
 .slider {
@@ -47,14 +84,22 @@ a {
   background-color: #eeeeee;
 }
 
-.slider-features,
-.nerds-features {
-  list-style: none;
+.slider-button {
+  background-color: #f97276;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+  text-transform: uppercase;
 }
 
-.slider-features a {
-  color: white;
+.slider-button:hover {
+  background-color: #e74246;
 }
+
+.slider-button:active {
+  background-color: #d7373b;
+}
+
 /*
 .slider1 {
   width: 698px;
@@ -97,10 +142,8 @@ a {
 }
  */
 
-.nerds-item a {
-  width: 241px;
-  height: 24px;
-  color: #000000;
+.nerds-item-title {
+  color: black;
   font-size: 24px;
   font-weight: 700;
   line-height: 30px;
@@ -108,139 +151,86 @@ a {
 }
 
 .nerds-item p {
-  width: 268px;
-  height: 45px;
-  color: #283136;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
 }
 
-.nerds-item
-.button {
-  width: 188px;
-  height: 15px;
-  color: #ffffff;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 18px;
-}
-
-.nerds-item
 .button-red {
   background-color: #fb565a;
 }
 
 
-.nerds-item
 .button-red:hover {
   background-color: #e74246;
 }
 
-.nerds-item
 .button-red:active {
   background-color: #d7373b;
 }
 
-.nerds-item
 .button-green {
   background-color: #00ca74;
 }
 
-.nerds-item
 .button-green:hover {
     background-color:#00bc6c;
   }
 
-.nerds-item
 .button-green:active {
   background-color: #00aa62;
 }
 
-.nerds-item
 .button-yellow {
   background-color: #efc84a;
 }
 
-.nerds-item
 .button-yellow:hover {
   background-color:#eab534;
 }
 
-.nerds-item
 .button-yellow:active {
   background-color: #e5a722;
 }
 
-
-.nerds-item
-.button3 {
-  width: 188px;
-  height: 15px;
-  color: #ffffff;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 18px;
-}
-
-
-
-
-
-
-.left-position h3 {
+.company-info h3 {
   font-size: 45px;
   font-weight: 500;
   line-height: 45px;
 }
 
-.left-position p {
-
+.company-info p {
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
 }
 
-.left-position h4,
-.right-position h4 {
+.company-info h4,
+.company-stats h4 {
   font-size: 16px;
   font-weight: 700;
   line-height: 24px;
   text-transform: uppercase;
 }
 
-.left-position-list {
+.order-list {
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
-  list-style: none;
 }
 
-.page-title {
-  width: 886px;
-  height: 47px;
-  color: #000000;
-  font-size: 55px;
-  font-weight: 500;
-  line-height: 55px;
-  text-align: center;
-}
-
-.filter fieldset {
+.filter-form fieldset {
   border: none;
 }
 
-.filter legend {
-  width: 167px;
-  height: 22px;
+.filter-form legend {
   font-size: 18px;
   font-weight: 700;
   line-height: 30px;
   text-transform: uppercase;
 }
 
-.filter ul {
-  list-style: none;
+.filter-option {
   font-size: 16px;
   font-weight: 400;
   line-height: 19px;
@@ -257,22 +247,31 @@ a {
   opacity: 0.5;
 }
 
-.catalog-items {
-  list-style: none;
-}
-
 .catalog-item {
   background-color: #f8f8f8;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+/*
+.catalog-item::before {
+  content:"";
+  width:
+  height:
+  background-image:;
+  position: absolute;
 }
 
 .catalog-item:hover {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  background-color: ;
 }
 
 .catalog-item-info h4 {
   color: #000000;
+  /*font-weight
 }
+*/
 
 .catalog-item-info h4:hover {
   color: #fb565a;
@@ -286,54 +285,45 @@ a {
   color: #666666;
 }
 
-.catalog-item-info a {
-  color: #ffffff;
+
+.button-catalog {
   background-color: #fb565a;
 }
 
-.catalog-item-info a:hover {
+.button-catalog:hover {
   background-color: #e74246;
 }
 
-.catalog-item-info a:active {
+.button-catalog:active {
   background-color: #d7373b;
 }
 
-.pagination-list {
-  list-style: none;
-}
-
-.pagination-item a {
+.pagination-item-link{
   color: #000000;
-  background-color: #eeeeee;
 }
 
-.pagination-item a:hover {
+.pagination-item-link:hover {
   background-color: #dfdfdf;
 }
 
-.pagination-item a:focus
-.pagination-item a:active {
+.pagination-item-link:focus,
+.pagination-item-link:active {
   background-color: #d5d5d5;
 }
 
-.pagination-item-current a {
+.current {
   color: #000000;
   background-color: #ffffff;
 }
 
-.pagination-item-current a:hover {
+.current:hover {
   background-color: #dfdfdf;
 }
 
-.pagination-item-current a:focus
-.pagination-item-current a:active {
+.current:focus,
+.current:active {
   background-color: #d5d5d5;
 }
-
-
-
-
 
 .visually-hidden {
   position: absolute;
@@ -346,27 +336,17 @@ a {
   overflow: hidden;
 }
 
-.social-button {
-  color: #e1e1e1
-}
-
-.main-footer
-.slogan{
-  width: 651px;
-  height: 38px;
+.slogan {
   font-size: 36px;
   font-weight: 700;
   line-height: 36px;
   text-align: center;
 }
 
-.main-footer
-.discount {
-  width: 373px;
-  height: 22px;
+.slogan-discount {
   color: #444444;
   font-size: 16px;
   font-weight: 400;
   line-height: 22px;
+  text-align: left;
 }
-
