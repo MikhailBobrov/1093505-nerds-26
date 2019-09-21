@@ -346,7 +346,7 @@ html {
   font-size: 36px;
   font-weight: 700;
   line-height: 36px;
-  text-align: center;
+  /*text-align: center;*/
 }
 
 .slogan-discount {
@@ -354,7 +354,7 @@ html {
   font-size: 16px;
   font-weight: 400;
   line-height: 22px;
-  text-align: left;
+  /*text-align: left;*/
 }
 
 /* ----- Сеточные стили ----- */
@@ -471,7 +471,48 @@ body {
   width: 358px;
 }
 
+.nerds-partners {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+  min-height: 181px;
+}
 
+.main-footer {
+  min-height: 218px;
+  padding: 69px 0;
+}
+
+.main-footer .main-footer-container {
+  display: flex;
+}
+
+.main-footer-container {
+  width: 949px;
+  margin: 0 auto;
+  padding: 0 10px;
+  background-color: #f97276;
+
+}
+
+.social-list {
+  min-height: 79px;
+  width: 263px;
+  margin-right: 139px;
+}
+
+.slogan {
+  margin: 0;
+  min-height: 79px;
+  width: 651px;
+}
+
+.slogan-discount {
+  margin: 0;
+  min-height: 79px;
+  width: 373px;
+}
 
 
 
