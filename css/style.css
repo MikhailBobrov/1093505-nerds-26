@@ -13,6 +13,13 @@ a {
   text-decoration: none;
 }
 
+*, *::after, *::before {
+  box-sizing: inherit;
+}
+html {
+  box-sizing: border-box;
+}
+
 .main-header {
   background-color: rgba(0, 0, 0, 0);
 }
@@ -258,11 +265,12 @@ a {
   background-image: url("../img/shape.png");
   position: absolute;
 }
-
+/*
 .catalog-item:hover {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   color: #4d4d4d;
 }
+ */
 
 .catalog-item-info h4 {
   color: #000000;
@@ -348,3 +356,136 @@ a {
   line-height: 22px;
   text-align: left;
 }
+
+/* ----- Сеточные стили ----- */
+
+html,
+body {
+  min-width: 1440px;
+  min-height: 2476px;
+}
+
+.main-header {
+  margin-bottom: 36px;
+
+  /* Временно для сетки */
+  min-height: 133px;
+}
+
+.main-navigation {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  /* Временно для сетки */
+  min-height: 133px;
+}
+
+.main-header-logo {
+  order: -1;
+  width: 160px;
+  height: 49px;
+  margin-top: 56px;
+  margin-left: 57px;
+  /*display: block;*/
+}
+
+.site-navigation-wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 38px;
+  /* Временно для сетки*/
+  min-height: 70px;
+}
+
+/*
+.inner-navigation {
+  width: 800px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+/*
+.site-navigation-wrapper .inner-navigation {
+  display: flex;
+  justify-content: space-between;
+}
+
+ */
+
+.site-navigation {
+  width: 470px;
+  margin: 0;
+  padding: 0;
+  /* Временно для сетки*/
+  min-height: 60px;
+}
+
+.user-navigation {
+  width: 140px;
+  margin: 0;
+  padding: 0;
+  /* Временно для сетки*/
+  min-height: 60px;
+}
+
+
+.nerds-list {
+  width: 1098px;
+  margin: 0 auto;
+  padding: 0 10px;
+  margin-top: 71px;
+  margin-bottom: 77px;
+}
+
+.nerds-features {
+  display: flex;
+  justify-content: space-between;
+  min-height: 350px;
+  margin: 0;
+  padding: 0;
+}
+
+.nerds-item {
+  min-height: 350px;
+  width: 300px;
+}
+
+.nerds-slogan {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 41px;
+  margin-right: 140px;
+  margin-bottom: 14px;
+  margin-left: 140px;
+}
+
+.company-info {
+  min-height: 524px;
+  width: 756px;
+}
+
+.company-stats {
+  min-height: 524px;
+  width: 358px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
