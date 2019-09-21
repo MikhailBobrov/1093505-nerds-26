@@ -7,25 +7,31 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="inner-page">
 <header class="main-header">
   <nav class="main-navigation">
-    <a class="main-header-logo">
-      <img src="img/nerds-logo.svg" width="160px" height="49px" alt="Логотип Дизайн-студии Нёрдс">
-    </a>
-    <ul class="site-navigation reset-list">
-      <li><a class="site-navigation-link" href="studio.html">Студия</a></li>
-      <li><a class="site-navigation-link" href="customer.html">Клиенты</a></li>
-      <li><a class="site-navigation-link">Магазин</a></li>
-      <li><a class="site-navigation-link" href="contacts.html">Контакты</a></li>
-      <li><a class="basket" href="basket.html">Корзина</a></li>
-    </ul>
+    <!--<div class="site-navigation-wrapper">-->
+      <a class="main-header-logo">
+        <img src="img/nerds-logo.svg" width="160px" height="49px" alt="Логотип Дизайн-студии Нёрдс">
+      </a>
+      <!--<div class="inner-navigation">-->
+      <ul class="site-navigation reset-list">
+        <li><a class="site-navigation-link" href="studio.html">Студия</a></li>
+        <li><a class="site-navigation-link" href="customer.html">Клиенты</a></li>
+        <li><a class="site-navigation-link">Магазин</a></li>
+        <li><a class="site-navigation-link" href="contacts.html">Контакты</a></li>
+      </ul>
+      <ul class="user-navigation reset-list">
+        <li><a class="basket" href="basket.html">Корзина</a></li>
+      </ul>
+    <!--</div>-->
+    <!--</div>-->
   </nav>
   <h1 class="page-title">Магазин готовых шаблонов</h1>
 </header>
 
 <main class="container">
-
+<div class="catalog-columns">
   <section class="catalog-filters">
     <h2 class="visually-hidden">Список фильтров</h2>
     <form class="filter-form" action="URL" method="get">
@@ -174,7 +180,7 @@
       <li><a class="pagination-item-link" href="#">Следующая</a></li>
     </ul>
   </section>
-
+</div>
   <section class="map-contacts">
     <div class="nerds-contacts">
       <h4>nerds design studio</h4>
@@ -213,14 +219,16 @@
 </main>
 
 <footer class="main-footer">
-  <ul class="social-list reset-list">
-    <li class="social-button"><a href="#"><img src="img/vk-icon.svg" width="" height="" alt="Vkontakte"></a></li>
-    <li class="social-button"><a href="#"><img src="img/fb-icon.svg" width="" height="" alt="Facebook"></a></li>
-    <li class="social-button"><a href="#"><img src="img/insta-icon.svg" width="" height="" alt="Intsagram"></a></li>
-  </ul>
-  <div class="slogan">
-    <p>Давайте дружить, это выгодно!</p>
-    <p class="slogan-discount">Скидка 10% для друзей из социальных сетей.</p>
+  <div class="main-footer-container">
+    <ul class="social-list reset-list">
+      <li class="social-button"><a href="#"><img src="img/vk-icon.svg" width="" height="" alt="Vkontakte"></a></li>
+      <li class="social-button"><a href="#"><img src="img/fb-icon.svg" width="" height="" alt="Facebook"></a></li>
+      <li class="social-button"><a href="#"><img src="img/insta-icon.svg" width="" height="" alt="Intsagram"></a></li>
+    </ul>
+    <div class="slogan">
+      <p>Давайте дружить, это выгодно!</p>
+      <p class="slogan-discount">Скидка 10% для друзей из социальных сетей.</p>
+    </div>
   </div>
 </footer>
 
