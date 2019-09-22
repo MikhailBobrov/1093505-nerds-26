@@ -7,14 +7,13 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="inner-page">
+<body>
+<div class="inner-page">
 <header class="main-header">
   <nav class="main-navigation">
-    <!--<div class="site-navigation-wrapper">-->
       <a class="main-header-logo">
         <img src="img/nerds-logo.svg" width="160px" height="49px" alt="Логотип Дизайн-студии Нёрдс">
       </a>
-      <!--<div class="inner-navigation">-->
       <ul class="site-navigation reset-list">
         <li><a class="site-navigation-link" href="studio.html">Студия</a></li>
         <li><a class="site-navigation-link" href="customer.html">Клиенты</a></li>
@@ -24,13 +23,12 @@
       <ul class="user-navigation reset-list">
         <li><a class="basket" href="basket.html">Корзина</a></li>
       </ul>
-    <!--</div>-->
-    <!--</div>-->
   </nav>
   <h1 class="page-title">Магазин готовых шаблонов</h1>
 </header>
+</div>
 
-<main class="container">
+<main>
 <div class="catalog-columns">
   <section class="catalog-filters">
     <h2 class="visually-hidden">Список фильтров</h2>
@@ -181,20 +179,23 @@
     </ul>
   </section>
 </div>
-  <section class="map-contacts">
-    <div class="nerds-contacts">
-      <h4>nerds design studio</h4>
-      <p>191186, Санкт-Петербург,<br>
-        ул. Б. Конюшенная, д. 19/8</p><br>
 
-      <a href="tel:+7 (812) 275-75-75"> тел. +7 (812) 275-75-75</a>
-      <a href="#">Напишите нам</a>
-    </div>
+  <div class="map-container">
+    <section class="map-contacts">
+      <div class="nerds-contacts">
+        <h4>nerds design studio</h4>
+        <p>191186, Санкт-Петербург,<br>
+          ул. Б. Конюшенная, д. 19/8</p><br>
 
-    <img src="img/map.png" width="" height="" alt="Офис компании по адресу: Санкт-Петербург,ул. Б. Конюшенная, д. 19/8"><!--background posirion relevant??-->
-    <img class="map-marker" src="img/map-marker.png" width="" height="" alt="Маркер"><!--class map-marker - css - position-absolut-->
+        <a href="tel:+7 (812) 275-75-75"> тел. +7 (812) 275-75-75</a>
+        <a href="#">Напишите нам</a>
+      </div>
 
-  </section>
+      <img src="img/map.png" width="" height="" alt="Офис компании по адресу: Санкт-Петербург,ул. Б. Конюшенная, д. 19/8"><!--background position relevant??-->
+      <img class="map-marker" src="img/map-marker.png" width="" height="" alt="Маркер"><!--class map-marker - css - position-absolut-->
+
+    </section>
+  </div>
 
   <section class="popup">
     <h3>Напишите нам</h3>

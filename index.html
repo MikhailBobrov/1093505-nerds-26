@@ -7,14 +7,13 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="inner-page">
+<body>
+<div class="top-container">
 <header class="main-header">
   <nav class="main-navigation">
-    <!--<div class="site-navigation-wrapper">-->
     <a class="main-header-logo">
       <img src="img/nerds-logo.svg" width="160px" height="49px" alt="Логотип Дизайн-студии Нёрдс">
     </a>
-    <!--<div class="inner-navigation">-->
     <ul class="site-navigation reset-list">
       <li><a class="site-navigation-link" href="studio.html">Студия</a></li>
       <li><a class="site-navigation-link" href="customer.html">Клиенты</a></li>
@@ -24,39 +23,38 @@
     <ul class="user-navigation reset-list">
       <li><a class="basket" href="basket.html">Корзина</a></li>
     </ul>
-    <!--</div>-->
-    <!--</div>-->
   </nav>
-</header>
-
-<main class="container">
-  <h1 class="visually-hidden">Нердс студия</h1>
 
   <section class="slider">
 
     <ul class="slider-list reset-list">
       <li class="slider-item slider-item-1">
         <p class="slider-item-title">Долго, дорого, скурпулезно</p>
-          <p class="slider-item-text">Математически выверенный дизайн  для вашего сайта или мобильного приложения.</p>
-            <a class="button slider-button" href="studio.html">Узнать больше</a>
+        <p class="slider-item-text">Математически выверенный дизайн  для вашего сайта или мобильного приложения.</p>
+        <a class="button slider-button" href="studio.html">Узнать больше</a>
         <!--картинка будет оформлена через background-->
       </li>
-        <!--порпавить все ниже-->
+      <!--порпавить все ниже-->
       <li class="slider-item slider-item-2">
         <p class="slider-title">Любим математику , как никто другой</p>
-          <p class="slider-text">Никакого креатива, только математические формулы  для расчета идеальных пропорций.</p>
-            <a class="button slider-button" href="studio.html">Узнать больше</a>
+        <p class="slider-text">Никакого креатива, только математические формулы  для расчета идеальных пропорций.</p>
+        <a class="button slider-button" href="studio.html">Узнать больше</a>
       </li>
 
       <li class="slider-item slider-item-3">
         <p class="slider-title">Только ночь,  только хардкор</p>
-          <p class="slider-text">Работать днем, как все? Мы против этого.  Ближе к полуночи работа только начинается.</p>
-            <a class="button slider-button" href="studio.html">Узнать больше</a>
+        <p class="slider-text">Работать днем, как все? Мы против этого.  Ближе к полуночи работа только начинается.</p>
+        <a class="button slider-button" href="studio.html">Узнать больше</a>
       </li>
     </ul>
-</section>
+  </section>
+</header>
+</div>
 
-  <section class="nerds-list">
+<main>
+  <h1 class="visually-hidden">Нердс студия</h1>
+
+  <section class="nerds-list container">
 
     <h2 class="visually-hidden">Список услуг</h2>
     <ul class="nerds-features reset-list">
@@ -87,7 +85,7 @@
     </ul>
   </section>
 
-  <section class="nerds-slogan">
+  <section class="nerds-slogan container">
     <div class="company-info">
       <h3>Мы — маленькая, но гордая
         дизайн-студия из Краснодара.</h3>
@@ -122,7 +120,7 @@
     </div>
   </section>
 
-  <section class="nerds-partners">
+  <section class="nerds-partners container">
     <ul class="reset-list">
       <li><a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/html-academy-logo.png" width="" height="" alt="логотип HTML-Academy"></a></li>
       <li><a href="#"><img src="img/borodinski.png" width="" height="" alt="логотип Barbershop Borodinski"></a></li>
@@ -131,6 +129,7 @@
     </ul>
   </section>
 
+  <div class="map-container">
   <section class="map-contacts">
     <div class="nerds-contacts">
       <h4>nerds design studio</h4>
@@ -145,6 +144,7 @@
       <img class="map-marker" src="img/map-marker.png" width="" height="" alt="Маркер"><!--class map-marker - css - position-absolut-->
 
   </section>
+  </div>
 
   <section class="popup">
     <h3>Напишите нам</h3>
@@ -168,7 +168,7 @@
 
 </main>
 
-  <footer class="main-footer">
+  <footer class="main-footer container">
     <div class="main-footer-container">
       <ul class="social-list reset-list">
         <li class="social-button"><a href="#"><img src="img/vk-icon.svg" width="" height="" alt="Vkontakte"></a></li>

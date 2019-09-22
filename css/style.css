@@ -20,8 +20,19 @@ html {
   box-sizing: border-box;
 }
 
-.main-header {
-  background-color: rgba(0, 0, 0, 0);
+.top-container {
+  width: 1360px;
+  margin-top: 9px;
+  margin-left: 83px;
+  margin-bottom: 71px;
+  background-color: #eeeeee;
+}
+
+.inner-page {
+  width: 1440px;
+  margin-bottom: 57px;
+  background-color: #eeeeee;
+  min-height: 355px;
 }
 
 .reset-list {
@@ -41,19 +52,15 @@ html {
   line-height: 30px;
   font-weight: 500;
   text-transform: uppercase;
-  background-color: white;
-}
 
-.main-header-logo img {
-  color: #000000;
 }
 
 .main-header-logo:hover img {
-  color: #303030;
+  opacity: 0.7;
 }
 
 .main-header-logo:active img {
-  color: #a7a7a7;
+  opacity: 0.3;
 }
 
 .site-navigation-link {
@@ -373,47 +380,20 @@ body {
 }
 
 .main-navigation {
-  background-color: #f97276;
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
+  justify-content:flex-start;
   /* Временно для сетки */
   min-height: 133px;
 }
 
 .main-header-logo {
-  order: 0;
   width: 160px;
   height: 49px;
   margin-top: 56px;
   margin-left: 57px;
   /*display: block;*/
 }
-/*
-.site-navigation-wrapper {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  width: 100%;
-  margin-bottom: 38px;
-  /* Временно для сетки
-  min-height: 70px;
-}
-
-/*
-.inner-navigation {
-  width: 800px;
-  margin: 0 auto;
-  padding: 0 10px;
-}
-
-/*
-.site-navigation-wrapper .inner-navigation {
-  display: flex;
-  justify-content: space-between;
-}
-
- */
 
 .site-navigation {
   width: 470px;
@@ -432,9 +412,13 @@ body {
   min-height: 60px;
 }
 
+.container {
+  width: 1100px;
+  margin: 0 auto;
+}
 
 .nerds-list {
-  width: 1098px;
+  width: 1100px;
   margin: 0 auto;
   padding: 0 10px;
   margin-top: 71px;
@@ -481,6 +465,11 @@ body {
   min-height: 181px;
 }
 
+.map-container {
+  width: 1440px;
+  margin: 0 auto;
+}
+
 .main-footer {
   min-height: 218px;
   padding: 69px 0;
@@ -488,14 +477,6 @@ body {
 
 .main-footer .main-footer-container {
   display: flex;
-}
-
-.main-footer-container {
-  width: 949px;
-  margin: 0 auto;
-  padding: 0 10px;
-  background-color: #f97276;
-
 }
 
 .social-list {
@@ -518,14 +499,10 @@ body {
 
 /*разметка флексами catalog.html*/
 
-.inner-page .main-header {
-  min-height: 355px;
-  margin-bottom: 57px;
-}
-
 .page-title {
   text-align: center;
   margin: 0;
+  margin-top: 189px;
   margin-bottom: 119px;
   padding: 0;
 
@@ -546,6 +523,8 @@ body {
 .catalog-columns {
   display: flex;
   justify-content: space-between;
+  width: 1160px;
+  margin: 0 auto;
 }
 
 .catalog-item {
