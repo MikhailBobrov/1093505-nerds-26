@@ -104,27 +104,27 @@
         превыше креатива. Работаем не покладая рук, как роботы.</p>
       <h4>Выполняем заказы на разработку:</h4>
       <ul class="order-list reset-list">
-        <li>Веб-сайтов любой сложности</li>
-        <li>Мобильных приложений для iOS и Android</li>
-        <li>Слайдшоу и видео для корпоративных презентаций</li>
+        <li class="order-list-item">Веб-сайтов любой сложности</li>
+        <li class="order-list-item">Мобильных приложений для iOS и Android</li>
+        <li class="order-list-item">Слайдшоу и видео для корпоративных презентаций</li>
       </ul>
     </div>
 
     <div class="company-stats">
-      <img src="img/nerds-illustration.png" width="" height="" alt="Логотип Дизайн-студии Нёрдс"><!--заполнить размеры картинок в пикселях - вопрос - это через CSS?-->
+      <img src="img/nerds-illustration.png" width="360px" height="208px" alt="Логотип Дизайн-студии Нёрдс"><!--заполнить размеры картинок в пикселях - вопрос - это через CSS?-->
       <h4>с 2004 года Любим точность во всем:</h4>
-      <table><!--это через Флексы-->
-        <tr>
-          <td>146<sup>%</sup></td>
-          <td>100<sup>%</sup></td>
-          <td>50<sup>%</sup></td>
+      <table class="stats"><!--это через Флексы-->
+        <tr class="stats-list">
+          <td class="stats-item">146<sup>%</sup></td>
+          <td class="stats-item">100<sup>%</sup></td>
+          <td class="stats-item">50<sup>%</sup></td>
         </tr>
         <tr>
-          <td>Уровень
+          <td class="stats-text">Уровень
             самоотдачи</td>
-          <td>Соблюдение
+          <td class="stats-text">Соблюдение
             сроков</td>
-          <td>Минимальная
+          <td class="stats-text">Минимальная
             предоплата</td>
         </tr>
       </table>
@@ -132,12 +132,14 @@
   </section>
 
   <section class="nerds-partners container">
-    <ul class="reset-list">
-      <li><a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/html-academy-logo.png" width="" height="" alt="логотип HTML-Academy"></a></li>
+    <hr> <!--может быть так????-->
+    <ul class="nerds-partners-list reset-list">
+      <li><a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/html-academy-logo.png" width="199px" height="68px" alt="логотип HTML-Academy"></a></li>
       <li><a href="#"><img src="img/borodinski.png" width="" height="" alt="логотип Barbershop Borodinski"></a></li>
       <li><a href="#"><img src="img/pink.png" width="" height="" alt="логотип компании Pink - Продуктовый лендинг приложения для iOS и Android"></a></li>
       <li><a href="#"><img src="img/mishka.png" width="" height="" alt="логотип Интернет-магазина вязаных игрушек mishka"></a></li>
     </ul>
+    <hr> <!--может быть так????-->
   </section>
 
   <div class="map-container">
@@ -148,7 +150,7 @@
         ул. Б. Конюшенная, д. 19/8</p><br>
 
         <a class="number" href="tel:+7 (812) 275-75-75"> тел. +7 (812) 275-75-75</a>
-      <a class="button button-red" href="#">Напишите нам</a>
+      <a class="button map-button" href="#">Напишите нам</a>
     </div>
 
       <img class="map" src="img/map.png" width="1440px" height="416px" alt="Офис компании по адресу: Санкт-Петербург,ул. Б. Конюшенная, д. 19/8"><!--background position relevant??-->
@@ -156,26 +158,6 @@
 
   </section>
   </div>
-
-  <section class="popup">
-    <h3>Напишите нам</h3>
-    <form class="feedback-form" action="#" method="post">
-      <p>
-        <label class="feedback-label" for="user-login">Ваше имя</label>
-        <input class="feedback-field" id="user-login" type="text" name="login" value="" placeholder="Имя Фамилия">
-      </p>
-      <p>
-        <label class="feedback-label" for="user-email">Ваш e-mail</label>
-        <input class="feedback-field" id="user-email" type="email" name="email" value="" placeholder="email@exaple.com">
-      </p>
-      <p>
-        <label class="feedback-label" for="login-text">Текст письма</label>
-        <textarea class="feedback-field" id="login-text" value="" placeholder="В свободной форме"></textarea>
-     </p>
-        <button class="button" type="submit">Отправить</button>
-    </form>
-    <button class="popup-close" type="button"><img src="img/close-cross.svg" alt="Закрыть">Закрыть</button>
-  </section>
 
 </main>
 
@@ -192,6 +174,26 @@
     </div>
     </div>
   </footer>
+
+<section class="popup">
+  <h3>Напишите нам</h3>
+  <form class="feedback-form" action="#" method="post">
+    <p class="feedback-option">
+      <label class="feedback-label" for="user-login">Ваше имя</label>
+      <input class="feedback-field" id="user-login" type="text" name="login" value="" placeholder="Имя Фамилия">
+    </p>
+    <p class="feedback-option">
+      <label class="feedback-label" for="user-email">Ваш e-mail</label>
+      <input class="feedback-field" id="user-email" type="email" name="email" value="" placeholder="email@exaple.com">
+    </p>
+    <p class="feedback-option">
+      <label class="feedback-label" for="login-text">Текст письма</label>
+      <textarea class="feedback-field" id="login-text" value="" placeholder="В свободной форме"></textarea>
+    </p>
+    <button class="button" type="submit">Отправить</button>
+  </form>
+  <button class="popup-close" type="button"><img src="img/close-cross.svg" alt="Закрыть">Закрыть</button>
+</section>
 
   </body>
 </html>
