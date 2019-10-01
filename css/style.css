@@ -93,6 +93,7 @@ img {
   padding-top: 28px;
 }
 
+/*catalog.html*/
 .inner-page {
   width: 1440px;
   margin-bottom: 57px;
@@ -112,8 +113,6 @@ img {
 .user-navigation {
   margin-left: 240px;
   max-width: 180px;
-
-  /* Временно для сетки*/
 }
 
 .site-navigation-link {
@@ -139,7 +138,7 @@ img {
 
   position: absolute;
   top: 3px;
-  left: 18px; /*вот тут я не понял - когда я измеряю расстояние от иконки - в лекции сказали измерить всерху и слева. Я сделал - слева получается 43 - если так сделать то иконка наезжает на слово КОРЗИНА*/
+  left: 18px;
 
   width: 20px;
   height: 15px;
@@ -191,8 +190,6 @@ img {
 
   border-radius: 50%;
   cursor: pointer;
-
-  /* Временно для демонстрации */
 }
 
 .slider-controls i::after {
@@ -226,6 +223,11 @@ img {
   background-color: inherit;
   border: 2px solid #c1c1c1;
   border-radius: 50%;
+}
+
+/*catalog.html*/
+.active {
+  border-bottom: 2px solid #fb565a;
 }
 
 .slider-list {
@@ -312,6 +314,22 @@ img {
   cursor: default;
   opacity: 0.5;
   background-color: #000000;
+}
+
+
+.nerds-list {
+  margin: 0 auto;
+  padding: 0 10px;
+  margin-top: 71px;
+  margin-bottom: 77px;
+}
+
+.nerds-features {
+  display: flex;
+  justify-content: space-around;
+  min-height: 350px;
+  margin: 0;
+  padding: 0;
 }
 
 .nerds-item {
@@ -409,150 +427,6 @@ img {
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
-}
-
-.filter-form fieldset {
-  border: none;
-}
-
-.filter-form legend {
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 30px;
-  text-transform: uppercase;
-}
-
-.filter-option {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 19px;
-  color: #586064;
-}
-
-.filter-input:hover + label,
-.filter-input:focus + label {
-  color: #283136;
-}
-
-.filter-input:disabled + label {
-  color: #bfc2c3;
-  opacity: 0.5;
-}
-
-.catalog-item {
-  background-color: #ffffff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  position: relative;
-}
-
-.catalog-item::before {
-  content:"";
-  width: 360px;
-  height: 40px;
-  background-color: #eaeaea;
-  background-image: url("../img/shape.png");
-  position: absolute;
-}
-/*
-.catalog-item:hover {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  color: #4d4d4d;
-}
- */
-
-.catalog-item-info h4 {
-  color: #000000;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 30px;
-  text-transform: uppercase;
-}
-
-.catalog-item-info h4:hover {
-  color: #fb565a;
-}
-
-.catalog-item-info h4:active {
-  color: #b3b3b3;
-}
-
-.catalog-item-info p {
-  color: #666666;
-}
-
-.button-catalog {
-  background-color: #fb565a;
-}
-
-.button-catalog:hover {
-  background-color: #e74246;
-}
-
-.button-catalog:active {
-  background-color: #d7373b;
-}
-
-.pagination-item-link{
-  color: #000000;
-}
-
-.pagination-item-link:hover {
-  background-color: #dfdfdf;
-}
-
-.pagination-item-link:focus,
-.pagination-item-link:active {
-  background-color: #d5d5d5;
-}
-
-.current {
-  color: #000000;
-  background-color: #ffffff;
-}
-
-.current:hover {
-  background-color: #dfdfdf;
-}
-
-.current:focus,
-.current:active {
-  background-color: #d5d5d5;
-}
-
-.slogan {
-  font-size: 36px;
-  font-weight: 700;
-  line-height: 36px;
-  /*text-align: center;*/
-}
-
-.slogan-discount {
-  color: #444444;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 22px;
-  /*text-align: left;*/
-}
-
-/* ----- Сеточные стили ----- */
-
-.nerds-list {
-  margin: 0 auto;
-  padding: 0 10px;
-  margin-top: 71px;
-  margin-bottom: 77px;
-}
-
-.nerds-features {
-  display: flex;
-  justify-content: space-around;
-  min-height: 350px;
-  margin: 0;
-  padding: 0;
-}
-
-.feature-item p {
-  margin: 0 10px;
 }
 
 .nerds-slogan {
@@ -664,6 +538,7 @@ img {
   line-height: 18px;
 } /*как это сделать отступы между 146 и уровень самоотдачи*/
 
+
 .nerds-partners-list {
   display: flex;
   flex-direction: row;
@@ -675,7 +550,7 @@ img {
   padding-top: 46px; /* Расстояние от линии до текста */
   padding-bottom: 44px;
 }
-/*тут я не понял как мне сделать поперечную линию((((*/
+
 .nerds-partners-item {
   position: relative;
 }
@@ -759,7 +634,6 @@ img {
 
 .main-footer {
   min-height: 218px;
-  padding: 69px 0;
 }
 
 .main-footer .main-footer-container {
@@ -795,15 +669,33 @@ img {
 
 .slogan {
   margin: 0;
-  min-height: 79px;
   width: 651px;
+
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 36px;
 }
 
 .slogan-discount {
   margin: 0;
   min-height: 79px;
   width: 373px;
+  color: #444444;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  /*text-align: left;*/
 }
+
+.feature-item p {
+  margin: 0 10px;
+}
+
+.slogan-text {
+  margin-top: 79px;
+  margin-bottom: 8px;
+}
+
 
 .popup {
   width: 960px;
@@ -831,6 +723,17 @@ img {
   top: 75px;
   right: 25px;
   border: none;
+  opacity: 0.6;
+  cursor: pointer;
+
+}
+
+.popup-close:hover {
+  opacity: 1;
+}
+
+.popup-close:active {
+  opacity: 0.3;
 }
 
 .feedback-form {
@@ -943,41 +846,301 @@ img {
 
 /*разметка флексами catalog.html*/
 
-.page-title {
-  text-align: center;
-  margin: 0;
-  margin-top: 189px;
-  margin-bottom: 119px;
-  padding: 0;
 
-  /* Временно для сетки */
-  min-height: 47px;
+.page-title {
+  font-size: 55px;
+  font-weight: 500;
+  line-height: 55px;
+  text-align: center;
+  margin-top: 92px;
+}
+
+.catalog-columns {
+  display: flex;
+  justify-content: space-between;
 }
 
 .catalog-filters {
   width: 260px;
   min-height: 800px;
+  margin-right: 140px;
 }
+
+.filter-form fieldset {
+  border: none;
+}
+
+.filter-form legend {
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.filter-item {
+  margin: 0;
+  padding: 0;
+
+  border: none;
+}
+
+.range-filter {
+  width: 260px;
+  margin-top: 49px;
+}
+
+.range-controls {
+  position: relative;
+
+  height: 80px;
+  margin-bottom: 15px;
+  padding-top: 39px;
+  padding-right: 20px;
+  padding-left: 20px;
+  background-color: #f1f1f1;
+
+  border-radius: 5px;
+}
+
+.range-controls .scale {
+  height: 2px;
+
+  background: #d7dcde;
+}
+
+.range-controls .bar {
+  width: 70%;
+  height: 2px;
+
+  background: #00ca74;
+}
+
+.range-controls .toggle {
+  position: absolute;
+  top: 31px;
+  left: 10px;
+
+  width: 4px;
+  height: 4px;
+  padding: 1px;
+
+  border: 8px solid #ffffff;
+  background-color: #ababab;
+  box-shadow: 0 2px 1px 0 #cfcfcf;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.range-controls .toggle-min {
+  left: 18px;
+}
+
+.range-controls .toggle-max {
+  left: 160px;
+}
+
+.price-controls {
+  font-size: 0;
+}
+
+.price-controls label {
+  display: inline-block;
+  width: 50%;
+
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.price-controls input {
+  width: 60px;
+  padding: 8px 2px;
+  margin-left: 10px;
+
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 16px;
+  text-align: center;
+  color: #283136;
+
+  border: none;
+  border-radius: 5px;
+  background: #f1f1f1;
+}
+
+.max-price {
+  text-align: right;
+}
+
+/* Сетка */
+
+.filter-first {
+  padding-left: 0;
+}
+
+.filter-first legend {
+  padding-top: 52px;
+  line-height: 30px;
+  padding-bottom: 10px;
+}
+
+.filter-first-option {
+  margin-bottom: 15px;
+  padding-left: 30px;
+}
+
+.filter-first-option label {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  color: #283136;
+  position: relative;
+  opacity: 0.6;
+}
+
+.filter-first-option label::before {
+  content:"";
+  width: 25px;
+  height: 25px;
+  background-image: url("../img/radio-on.svg");
+  position: absolute;
+  background-repeat: no-repeat;
+  left: -30px;
+}
+
+.filter-first-option label:hover {
+  opacity: 0.9;
+}
+
+.filter-first-option label:disabled {
+  opacity: 0.1;
+}
+
+.filter-empty-option {
+  margin-bottom: 15px;
+  padding-left: 30px;
+}
+
+.filter-empty-option label {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  color: #283136;
+  position: relative;
+  opacity: 0.6;
+}
+
+.filter-empty-option label::before {
+  content:"";
+  width: 25px;
+  height: 25px;
+  background-image: url("../img/radio-off.svg");
+  position: absolute;
+  background-repeat: no-repeat;
+  left: -30px;
+}
+
+.filter-empty-option label:hover {
+  opacity: 0.9;
+}
+
+.filter-empty-option label:disabled {
+  opacity: 0.1;
+}
+
+/*---------------*/
+
+/*Особенности:*/
+.filter-features {
+  padding-left: 0;
+}
+
+.filter-features legend {
+  padding-top: 46px;
+  line-height: 30px;
+  padding-bottom: 10px;
+}
+
+.filter-features-checkbox {
+  margin-bottom: 15px;
+  padding-left: 30px;
+}
+
+.filter-features-checkbox label {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  color: #283136;
+  position: relative;
+  opacity: 0.6;
+}
+
+.filter-features-checkbox label::before {
+  content:"";
+  width: 25px;
+  height: 25px;
+  background-image: url("../img/checkbox-on.svg");
+  position: absolute;
+  background-repeat: no-repeat;
+  left: -30px;
+}
+
+.filter-features-checkbox label:hover {
+  opacity: 0.9;
+}
+
+.filter-features-checkbox label:disabled {
+  opacity: 0.1;
+}
+
+.empty-checkbox {
+  margin-bottom: 15px;
+  padding-left: 30px;
+}
+
+.empty-checkbox label {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  color: #283136;
+  position: relative;
+  opacity: 0.6;
+}
+
+.empty-checkbox label::before {
+  content:"";
+  width: 25px;
+  height: 25px;
+  background-image: url("../img/checkbox-off.svg");
+  position: absolute;
+  background-repeat: no-repeat;
+  left: -30px;
+}
+
+.empty-checkbox label:hover {
+  opacity: 0.9;
+}
+
+.empty-checkbox label:disabled {
+  opacity: 0.1;
+}
+
+/*----------------*/
 
 .catalog-list {
   width: 1440px;
   min-height: 800px;
 }
 
-.catalog-columns {
-  display: flex;
-  justify-content: space-between;
-  width: 1160px;
-  margin: 0 auto;
-}
-
 .catalog-item {
   width: 360px;
   margin-bottom: 33px;
   min-height: 576px;
-  margin-right: 50px;
+  margin-right: 20px;
   /*background-color: transparent;
   box-shadow: inset 0 1px 0 1px gray;*/
+
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: relative;
 }
 
 .catalog-items {
@@ -988,12 +1151,93 @@ img {
   margin-bottom: 60px;
 }
 
+
+.catalog-item::before {
+  content:"";
+  width: 360px;
+  height: 40px;
+  background-color: #eaeaea;
+  background-image: url("../img/shape.png");
+  position: absolute;
+}
+/*
+.catalog-item:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  color: #4d4d4d;
+}
+ */
+
+.catalog-item-info h4 {
+  color: #000000;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.catalog-item-info h4:hover {
+  color: #fb565a;
+}
+
+.catalog-item-info h4:active {
+  color: #b3b3b3;
+}
+
+.catalog-item-info p {
+  color: #666666;
+}
+
+.button-catalog {
+  background-color: #fb565a;
+}
+
+.button-catalog:hover {
+  background-color: #e74246;
+}
+
+.button-catalog:active {
+  background-color: #d7373b;
+}
+
 .pagination-list {
   padding: 0;
   margin: 0;
   /* Временно для сетки */
   min-height: 50px;
 }
+
+.pagination-item-link{
+  color: #000000;
+}
+
+.pagination-item-link:hover {
+  background-color: #dfdfdf;
+}
+
+.pagination-item-link:focus,
+.pagination-item-link:active {
+  background-color: #d5d5d5;
+}
+
+.current {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.current:hover {
+  background-color: #dfdfdf;
+}
+
+.current:focus,
+.current:active {
+  background-color: #d5d5d5;
+}
+
+
+
+
+
+
 
 
 

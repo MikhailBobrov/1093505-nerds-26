@@ -9,81 +9,89 @@
 </head>
 <body>
 <div class="inner-page">
-<header class="main-header">
-  <nav class="main-navigation">
-      <a class="main-header-logo">
-        <img src="img/nerds-logo.svg" width="160px" height="49px" alt="Логотип Дизайн-студии Нёрдс">
-      </a>
-      <ul class="site-navigation reset-list">
-        <li><a class="site-navigation-link" href="studio.html">Студия</a></li>
-        <li><a class="site-navigation-link" href="customer.html">Клиенты</a></li>
-        <li><a class="site-navigation-link">Магазин</a></li>
-        <li><a class="site-navigation-link" href="contacts.html">Контакты</a></li>
-      </ul>
-      <ul class="user-navigation reset-list">
-        <li><a class="basket" href="basket.html">Корзина</a></li>
-      </ul>
-  </nav>
-  <h1 class="page-title">Магазин готовых шаблонов</h1>
-</header>
+  <header class="main-header">
+      <div class="container">
+        <nav class="main-navigation">
+          <a class="main-header-logo" href="index.html">
+            <img src="img/nerds-logo.svg" width="160px" height="49px" alt="Логотип Дизайн-студии Нёрдс">
+          </a>
+          <div class="main-navigation-wrapper">
+          <ul class="site-navigation reset-list">
+            <li><a class="site-navigation-link" href="studio.html">Студия</a></li>
+            <li><a class="site-navigation-link" href="customer.html">Клиенты</a></li>
+            <li><a class="site-navigation-link active">Магазин</a></li>
+            <li><a class="site-navigation-link" href="contacts.html">Контакты</a></li>
+          </ul>
+          <ul class="user-navigation reset-list">
+            <li><a class="basket" href="basket.html">Корзина</a></li>
+           </ul>
+          </div>
+         </nav>
+        <h1 class="page-title">Магазин готовых шаблонов</h1>
+    </div>
+  </header>
 </div>
 
 <main>
-<div class="catalog-columns">
+<div class="catalog-columns container">
   <section class="catalog-filters">
     <h2 class="visually-hidden">Список фильтров</h2>
-    <form class="filter-form" action="URL" method="get">
-      <fieldset>
+    <form class="filter-form" action="https://echo.htmlacademy.ru" method="get">
+      <fieldset class="filter-item">
         <legend>Стоимость:</legend>
-        <div class="range"><!--position relative-->
-          <div class="scale"></div><!--зеленая линия будет с position absolute-->
-          <span class="range-min"></span><!--будет с position absolute - top - 0 - left- 0-->
-          <span class="range-max"></span><!--будет с position absolute - top - o - left-70%-->
-          <label for="range-min">от</label>
-          <input type="text" class="range-value" id="range-min" name="range-min">
-          <label for="range-max">до</label>
-          <input type="text" class="rabge-value" id="range-max" name="range-max">
+        <div class="range-filter">
+          <div class="range-controls">
+            <div class="scale">
+              <div class="bar"></div>
+            </div>
+            <div class="toggle toggle-min"></div>
+            <div class="toggle toggle-max"></div>
+          </div>
+          <div class="price-controls">
+            <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+            <label class="max-price">до <input name="max-price" type="text" value="15 000"></label>
+          </div>
         </div>
       </fieldset>
 
-      <fieldset>
-        <legend>Сетка</legend>
+      <fieldset class="filter-first">
+        <legend>Сетка:</legend>
         <ul class="reset-list">
-          <li class="filter-option">
-            <input class="visually-hidden filter-input filter-input-radio" id="adaptive" type="radio" name="version" value="adaptive" checked><!--для стилизации этих кружочков нужны псевдомэлементы befor-->
+          <li class="filter-first-option">
+            <input class="visually-hidden filter-input filter-input-radio" id="adaptive" type="radio" name="version" value="adaptive" checked>
             <label for="adaptive">Адаптивная</label>
           </li>
-          <li class="filter-option">
+          <li class="filter-empty-option">
             <input class="visually-hidden filter-input filter-input-radio" id="fixed" type="radio" name="version" value="fixed">
             <label for="fixed">Фиксированная</label>
           </li>
-          <li class="filter-option">
+          <li class="filter-empty-option">
             <input class="visually-hidden filter-input filter-input-radio" id="rubber" type="radio" name="version" value="rubber">
             <label for="rubber">Резиновая</label>
           </li>
         </ul>
       </fieldset>
 
-        <fieldset class="filter">
-          <legend>Особенности</legend>
+        <fieldset class="filter-features">
+          <legend>Особенности:</legend>
           <ul class="reset-list">
-            <li class="filter-option">
+            <li class="filter-features-checkbox">
               <input class="visually-hidden filter-input filter-input-checkbox" id="slider" name="slide" type="checkbox" checked>
               <label for="slider">Слайдер</label>
             </li>
-            <li class="filter-option">
+            <li class="empty-checkbox">
               <input class="visually-hidden filter-input filter-input-checkbox" id="benefits" name="benefits" type="checkbox">
               <label for="benefits">Блок преимуществ</label>
             </li>
-            <li class="filter-option">
+            <li class="filter-features-checkbox">
               <input class="visually-hidden filter-input filter-input-checkbox" id="news" name="news" type="checkbox" checked>
               <label for="news">Новости</label>
             </li>
-            <li class="filter-option">
+            <li class="empty-checkbox">
               <input class="visually-hidden filter-input filter-input-checkbox" id="gallery" name="galler" type="checkbox">
               <label for="gallery">Галерея</label>
             </li>
-            <li class="filter-option">
+            <li class="empty-checkbox">
               <input class="visually-hidden filter-input filter-input-checkbox" id="basket" name="basket" type="checkbox">
               <label for="basket">Корзина</label>
             </li>
@@ -100,7 +108,7 @@
 
       <li class="catalog-item"><!--position-relative-->
         <a href="sedona.html">
-          <img src="img/img-sedona.jpg" width="#" height="#" alt="sedona">
+          <img src="img/img-sedona.jpg" width="360px" height="576px" alt="sedona">
         </a>
         <div class="catalog-item-info"><!--position-absolute--><!--hover-->
           <h4>Sedona</h4>
