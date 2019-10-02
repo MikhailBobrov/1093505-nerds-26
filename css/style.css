@@ -71,7 +71,7 @@ img {
   line-height: 30px;
   font-weight: 500;
   text-transform: uppercase;
-  padding-top: 20px;
+  padding-top: 50px;
 }
 
 .main-header-logo {
@@ -1123,18 +1123,83 @@ img {
   opacity: 0.1;
 }
 
+.filter-button {
+  display: block;
+  height: 50px;
+  width: 260px;
+  padding: 13px 0;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  color: #000000;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  margin-top: 10px;
+  background-color: #eeeeee;
+  border-radius: 3px;
+  border: none;
+}
+
+.filter-button:hover {
+  background-color: #dfdfdf;
+}
+
+.filter-button:active {
+  color: #969696;
+
+  background-color: #d5d5d5;
+  box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
+}
+
 /*----------------*/
 
+/*Сортировать*/
+.row {
+  display: flex;
+  margin-top: 3px;
+}
+
+.sort {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.row-navigation {
+  display: flex;
+  flex-wrap: wrap;
+  width: 360px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.row-sort {
+  margin-right: 160px;
+  min-width: 240px;
+}
+
+.row-navigation-link {
+  color: black;
+  padding-right: 25px;
+}
+
+/*-----------*/
+
+/*Каталог*/
+
 .catalog-list {
-  width: 1440px;
-  min-height: 800px;
+  margin-top: 49px;
 }
 
 .catalog-item {
   width: 360px;
   margin-bottom: 33px;
   min-height: 576px;
-  margin-right: 20px;
+  margin-right: 40px;
   /*background-color: transparent;
   box-shadow: inset 0 1px 0 1px gray;*/
 
@@ -1151,6 +1216,10 @@ img {
   margin-bottom: 60px;
 }
 
+
+.catalog-item:nth-child(2n) {
+  margin-right: 0;
+}
 
 .catalog-item::before {
   content:"";
@@ -1233,7 +1302,7 @@ img {
   background-color: #d5d5d5;
 }
 
-
+/*-----------------*/
 
 
 
