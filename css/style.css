@@ -93,8 +93,7 @@ input[type="radio"].visually-hidden {
 
 .main-navigation-wrapper {
   display: flex;
-  margin-bottom: 5px;
-  padding-top: 28px;
+  padding-top: 25px;
 }
 
 /*catalog.html*/
@@ -107,11 +106,30 @@ input[type="radio"].visually-hidden {
 
 .site-navigation {
   display: flex;
+  /*
   justify-content: space-around;
+
+   */
   flex-wrap: wrap;
   width: 500px;
   margin: 0;
   padding: 0;
+}
+
+.studio {
+  margin-left: 61px;
+}
+
+.customer {
+  margin-left: 46px;
+}
+
+.catalog {
+  margin-left: 47px;
+}
+
+.contacts {
+  margin-left: 45px;
 }
 
 .user-navigation {
@@ -141,8 +159,8 @@ input[type="radio"].visually-hidden {
   content: "";
 
   position: absolute;
-  top: 3px;
-  left: 18px;
+  top: 2px;
+  left: 4px;
 
   width: 20px;
   height: 15px;
@@ -232,21 +250,18 @@ input[type="radio"].visually-hidden {
 /*catalog.html*/
 .active {
   border-bottom: 2px solid #fb565a;
-}
-
-.slider-list {
-  margin: 0;
-  padding: 0;
+  padding-bottom: 9px;
 }
 
 .slider-item {
   display: none;
+  padding-top: 76px;
 }
 
 .slider-item:nth-child(1) {
   background-image: url("../img/slide1.png");
   background-repeat: no-repeat;
-  background-position: 93% 18px;
+  background-position: 93% 17px;
 }
 
 .slider-item:nth-child(2) {
@@ -267,13 +282,12 @@ input[type="radio"].visually-hidden {
 
 .slider-item-container {
   max-width: 430px;
-  padding-bottom: 90px;
+  padding-bottom: 81px;
 }
 
 .slider-item h3 {
   margin: 0;
   margin-bottom: 27px;
-  margin-top: 56px;
   font-size: 55px;
   line-height: 55px;
   font-weight: 500;
@@ -287,8 +301,8 @@ input[type="radio"].visually-hidden {
 .button {
   display: block;
   width: 240px;
-  padding: 13px 0;
-
+  padding: 17px 0;
+  height: 50px;
   font-size: 16px;
   line-height: 18px;
   color: #ffffff;
@@ -320,37 +334,48 @@ input[type="radio"].visually-hidden {
   background-color: #000000;
 }
 
-
 .nerds-list {
   margin: 0 auto;
+  /*
   padding: 0 10px;
+
+   */
   margin-top: 71px;
   margin-bottom: 77px;
 }
 
 .nerds-features {
   display: flex;
+  /*
   justify-content: space-around;
+   */
   min-height: 350px;
   flex-wrap: wrap;
-  margin: 0;
+  /*margin: 0;
   padding: 0;
+
+   */
 }
 
 .nerds-item {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  /*justify-content: space-around;*/
   align-items: flex-start;
   width: 300px;
   min-height: 350px;
-  margin-top: 71px;
+  margin-top: 9px;
+  margin-right: 100px;
   background-color: rgba(0, 0, 0, 0);
 }
 
+.nerds-item:last-child {
+  margin-right: 10px;
+}
+
 .nerds-item h3 {
-  margin-top: 24px;
-  margin-bottom: 20px;
+  margin-top: 18px;
+  margin-bottom: 16px;
   color: black;
   font-size: 24px;
   font-weight: 700;
@@ -359,8 +384,10 @@ input[type="radio"].visually-hidden {
 }
 
 .nerds-item p {
-  color: #3b4348;
-
+  margin-top: 0;
+  margin-bottom: 32px;
+  color: #283136;
+  max-width: 270px;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -408,18 +435,6 @@ input[type="radio"].visually-hidden {
   background-color: #e5a722;
 }
 
-.company-info h3 {
-  font-size: 45px;
-  font-weight: 500;
-  line-height: 45px;
-}
-
-.company-info p {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 24px;
-}
-
 .company-info h4,
 .company-stats h4 {
   font-size: 16px;
@@ -439,7 +454,7 @@ input[type="radio"].visually-hidden {
   justify-content: space-between;
   margin-top: 41px;
   margin-right: 140px;
-  margin-bottom: 14px;
+  margin-bottom: 49px;
   margin-left: 140px;
   border-top: 2px solid #eeeeee; /* Параметры линии */
   margin-top: 20px; /* Отступ слева */
@@ -447,8 +462,12 @@ input[type="radio"].visually-hidden {
 }
 
 .company-info {
+  /*
   min-height: 524px;
+
+   */
   width: 756px;
+  margin-top: 21px;
 }
 
 .nerds-slogan h3 {
@@ -465,6 +484,7 @@ input[type="radio"].visually-hidden {
   font-weight: 400;
   line-height: 24px;
   margin-bottom: 40px;
+  max-width: 645px;
 }
 
 .nerds-slogan h4 {
@@ -500,17 +520,23 @@ input[type="radio"].visually-hidden {
 
 .order-list-item {
   position: relative;
-  padding-left: 25px;
+  padding-bottom: 24px;
+  padding-left: 36px;
 }
 
-
 .company-stats {
-  margin-top: 40px;
+  margin-top: 30px;
+  /*
   min-height: 524px;
+
+   */
   width: 358px;
 }
 
 .company-stats h4 {
+  margin-left: 14px;
+  margin-top: 30px;
+  margin-bottom: 20px;
   font-size: 16px;
   font-weight: 700;
   line-height: 24px;
@@ -518,7 +544,7 @@ input[type="radio"].visually-hidden {
 }
 
 .stats {
-  margin-top: 40px;
+  border-collapse: collapse;
 }
 
 .stats-item {
@@ -530,36 +556,90 @@ input[type="radio"].visually-hidden {
 
 .stats-item sup {
   position: absolute;
-  top: 13px;
+  top: 35px;
   font-size: 26px;
   font-weight: 700;
 }
 
+
+.stats-first {
+  padding-top: 21px;
+}
+
+.stats-second {
+  padding-top: 21px;
+  padding-left: 14px;
+}
+
+.stats-third {
+  padding-top: 21px;
+  padding-left: 20px;
+}
+
 .stats-text {
-  margin-top: 15px;
   color: #283136;
   font-size: 16px;
   font-weight: 400;
   line-height: 18px;
 } /*как это сделать отступы между 146 и уровень самоотдачи*/
 
+.text-first {
+  padding-top: 18px;
+}
+
+.text-second {
+  padding-top: 18px;
+  padding-left: 15px;
+}
+
+.text-third {
+  padding-top: 18px;
+  padding-left: 22px;
+}
 
 .nerds-partners-list {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+
+
   margin-top: 14px;
   margin-bottom: 80px;
   border-top: 2px solid #eeeeee; /* Параметры линии */
   border-bottom: 2px solid #eeeeee; /* Параметры линии */
   padding-top: 46px; /* Расстояние от линии до текста */
-  padding-bottom: 44px;
+  padding-bottom: 37px;
 }
 
+/*
 .nerds-partners-item {
   position: relative;
 }
 
+ */
+
+.partners-first {
+  padding-left: 31px;
+  padding-top: 16px;
+  position: relative;
+}
+
+.partners-second {
+  padding-left: 96px;
+  position: relative;
+}
+
+.partners-third {
+  padding-left: 103px;
+  padding-top: 19px;
+  position: relative;
+}
+
+.partners-fourth {
+  padding-left: 121px;
+  padding-top: 6px;
+  position: relative;
+}
+
+/*
 .nerds-partners-item::after {
   content: "";
   width: 2px;
@@ -568,6 +648,38 @@ input[type="radio"].visually-hidden {
   position: absolute;
   top: 5px;
   right: -50px;
+}
+
+ */
+
+.partners-first::after {
+  content: "";
+  width: 2px;
+  height: 52px;
+  background-color: #eeeeee;
+  position: absolute;
+  top: 18px;
+  right: -51px;
+}
+
+.partners-second::after {
+  content: "";
+  width: 2px;
+  height: 52px;
+  background-color: #eeeeee;
+  position: absolute;
+  top: 18px;
+  right: -46px;
+}
+
+.partners-third::after {
+  content: "";
+  width: 2px;
+  height: 52px;
+  background-color: #eeeeee;
+  position: absolute;
+  top: 18px;
+  right: -58px;
 }
 
 .nerds-partners-item:last-child::after{
@@ -584,14 +696,13 @@ input[type="radio"].visually-hidden {
   min-height: 416px;
   position: relative;
 }
-/*карту не сделал на весь экран */
 
 .nerds-contacts {
   display: flex;
   flex-direction: column;
   position: absolute;
   align-items: flex-start;
-  top: 60px;
+  top: 54px;
   left: 140px;
   background-color: white;
   width: 319px;
@@ -602,30 +713,36 @@ input[type="radio"].visually-hidden {
   font-size: 18px;
   font-weight: 700;
   line-height: 30px;
-  margin-top: 47px;
+  margin-top: 49px;
   margin-left: 50px;
   text-transform: uppercase;
 }
 
 .nerds-contacts p {
   margin: 0;
-  margin-left: 50px;
+  margin-left: 51px;
   font-size: 16px;
   font-weight: 400;
   line-height: 18px;
   color: #666666;
 }
 
+.nerds-contacts p + p {
+  margin-top: 17px;
+}
+
 .nerds-contacts .number {
   color: #666666;
-  margin-left: 50px;
 }
 
 .nerds-contacts .map-button {
   align-items: flex-start;
   margin-top: 36px;
   margin-left: 50px;
+  /*
   margin-bottom: 47px;
+
+   */
   width: 219px;
 }
 
@@ -649,7 +766,7 @@ input[type="radio"].visually-hidden {
   min-height: 79px;
   width: 263px;
   margin-right: 139px;
-  margin-top: 69px;
+  margin-top: 63px;
   margin-bottom: 69px;
 }
 
@@ -697,8 +814,8 @@ input[type="radio"].visually-hidden {
 }
 
 .slogan-text {
-  margin-top: 79px;
-  margin-bottom: 8px;
+  margin-top: 69px;
+  margin-bottom: 9px;
 }
 
 /*popup*/
@@ -792,7 +909,6 @@ input[type="radio"].visually-hidden {
   margin-right: 20px;
 }
 
-
 .feedback-option input {
   box-sizing: border-box;
   width: 100%;
@@ -869,7 +985,7 @@ input[type="radio"].visually-hidden {
   border: 2px solid #e74246;
 }
 
-/*разметка флексами catalog.html*/
+/*разметка catalog.html*/
 
 
 .page-title {
@@ -877,7 +993,7 @@ input[type="radio"].visually-hidden {
   font-weight: 500;
   line-height: 55px;
   text-align: center;
-  margin-top: 92px;
+  margin-top: 77px;
 }
 
 .catalog-columns {
@@ -918,8 +1034,8 @@ input[type="radio"].visually-hidden {
   position: relative;
 
   height: 80px;
-  margin-bottom: 15px;
-  padding-top: 39px;
+  margin-bottom: 19px;
+  padding-top: 41px;
   padding-right: 20px;
   padding-left: 20px;
   background-color: #f1f1f1;
@@ -947,7 +1063,7 @@ input[type="radio"].visually-hidden {
 
   width: 4px;
   height: 4px;
-  padding: 1px;
+  padding: 2px;
 
   border: 8px solid #ffffff;
   background-color: #ababab;
@@ -977,9 +1093,9 @@ input[type="radio"].visually-hidden {
 }
 
 .price-controls input {
-  width: 60px;
+  width: 80px;
   padding: 8px 2px;
-  margin-left: 10px;
+  margin-left: 8px;
 
   font-family: Roboto, Arial, sans-serif;
   font-size: 16px;
@@ -1002,7 +1118,7 @@ input[type="radio"].visually-hidden {
 }
 
 .filter-first legend {
-  padding-top: 52px;
+  padding-top: 56px;
   line-height: 30px;
   padding-bottom: 10px;
 }
@@ -1012,7 +1128,7 @@ input[type="radio"].visually-hidden {
 }
 
 .filter-option label {
-  padding-left: 30px;
+  padding-left: 34px;
   font-size: 16px;
   font-weight: 400;
   line-height: 19px;
@@ -1028,7 +1144,8 @@ input[type="radio"].visually-hidden {
   background-image: url("../img/radio-off.svg");
   position: absolute;
   background-repeat: no-repeat;
-  left: 0;
+  left: -1px;
+  bottom: -1px;
 }
 
 .filter-option label:hover {
@@ -1050,18 +1167,23 @@ input[type="radio"].visually-hidden {
 
 /*Особенности:*/
 
+.filter-features {
+  padding-left: 0px;
+}
+
 .filter-features legend {
-  padding-top: 46px;
+  padding-top: 18px;
   line-height: 30px;
   padding-bottom: 10px;
 }
 
 .filter-checkbox {
   margin-bottom: 15px;
+  padding-left: 9px;
 }
 
 .filter-checkbox label {
-  padding-left: 30px;
+  padding-left: 25px;
   font-size: 16px;
   font-weight: 400;
   line-height: 19px;
@@ -1092,9 +1214,6 @@ input[type="radio"].visually-hidden {
   background-image: url("../img/checkbox-on.svg");
 }
 
-
-
-
 .filter-button {
   display: block;
   height: 50px;
@@ -1107,7 +1226,7 @@ input[type="radio"].visually-hidden {
   text-transform: uppercase;
   text-align: center;
   text-decoration: none;
-  margin-top: 10px;
+  margin-top: 26px;
   background-color: #eeeeee;
   border-radius: 3px;
   border: none;
@@ -1247,7 +1366,7 @@ input[type="radio"].visually-hidden {
   display: none;
   position: absolute;
   align-items: flex-start;
-  top: 350px;
+  bottom: 0;
   background-color: #eeeeee;
   width: 360px;
   min-height: 230px;
