@@ -96,7 +96,6 @@ input[type="radio"].visually-hidden {
   padding-top: 25px;
 }
 
-/*catalog.html*/
 .inner-page {
   width: 1440px;
   margin-bottom: 57px;
@@ -106,10 +105,6 @@ input[type="radio"].visually-hidden {
 
 .site-navigation {
   display: flex;
-  /*
-  justify-content: space-around;
-
-   */
   flex-wrap: wrap;
   width: 500px;
   margin: 0;
@@ -117,7 +112,7 @@ input[type="radio"].visually-hidden {
 }
 
 .studio {
-  margin-left: 61px;
+  margin-left: 21px;
 }
 
 .customer {
@@ -133,7 +128,7 @@ input[type="radio"].visually-hidden {
 }
 
 .user-navigation {
-  margin-left: 240px;
+  margin-left: 200px;
   max-width: 180px;
 }
 
