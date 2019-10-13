@@ -189,11 +189,11 @@ input[type="radio"].visually-hidden {
 }
 
 .slider-controls {
+  display: flex;
   position: absolute;
-  left: 50%;
-  bottom: 104px;
+  left: 53%;
+  bottom: 95px;
   z-index: 100;
-
   width: 160px;
   height: 18px;
 
@@ -204,11 +204,11 @@ input[type="radio"].visually-hidden {
 
 .slider-controls i {
   position: relative;
-
+  margin-right: 17px;
+  background-color: #fff;
   display: inline-block;
   width: 18px;
   height: 18px;
-  padding: 8px;
 
   border-radius: 50%;
   cursor: pointer;
@@ -230,7 +230,7 @@ input[type="radio"].visually-hidden {
   border-radius: 50%;
 }
 
-.slider-controls .active::before {
+.slider-controls .relevant::before {
   content: "";
 
   position: absolute;
@@ -238,9 +238,9 @@ input[type="radio"].visually-hidden {
   top: 60%;
   z-index: 2;
 
-  width: 4px;
-  height: 4px;
-  margin: -4px;
+  width: 8px;
+  height: 8px;
+  margin: -6px;
 
   background-color: inherit;
   border: 2px solid #c1c1c1;
@@ -599,8 +599,6 @@ input[type="radio"].visually-hidden {
 
 .nerds-partners-list {
   display: flex;
-
-
   margin-top: 14px;
   margin-bottom: 80px;
   border-top: 2px solid #eeeeee; /* Параметры линии */
@@ -608,13 +606,6 @@ input[type="radio"].visually-hidden {
   padding-top: 46px; /* Расстояние от линии до текста */
   padding-bottom: 37px;
 }
-
-/*
-.nerds-partners-item {
-  position: relative;
-}
-
- */
 
 .partners-first {
   padding-left: 31px;
@@ -639,18 +630,6 @@ input[type="radio"].visually-hidden {
   position: relative;
 }
 
-/*
-.nerds-partners-item::after {
-  content: "";
-  width: 2px;
-  height: 52px;
-  background-color: #eeeeee;
-  position: absolute;
-  top: 5px;
-  right: -50px;
-}
-
- */
 
 .partners-first::after {
   content: "";
@@ -686,9 +665,18 @@ input[type="radio"].visually-hidden {
   display: none;
 }
 
-.nerds-partners-item:active {
-  opacity: 0.3;
+.nerds-partners-item {
+  opacity: 0.2;
 }
+
+.nerds-partners-item:hover {
+  opacity: 1;
+}
+
+.nerds-partners-item:active {
+   opacity: 0.1;
+ }
+
 
 .map-container {
   min-width: 1440px;
