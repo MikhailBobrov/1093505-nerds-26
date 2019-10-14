@@ -5,7 +5,7 @@
   <title>HTML Academy: Нёрдс</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style-min.css">
 </head>
 <body>
 <div class="inner-page">
@@ -58,15 +58,15 @@
         <legend>Сетка:</legend>
         <ul class="reset-list">
           <li class="filter-option">
-            <input class="visually-hidden filter-input filter-input-radio" id="adaptive" type="radio" name="version" value="adaptive" checked>
+            <input class="visually-hidden filter-input filter-input-radio" id="adaptive" type="radio" name="version" value="adaptive" aria-label="Адаптивная" checked>
             <label for="adaptive">Адаптивная</label>
           </li>
           <li class="filter-option">
-            <input class="visually-hidden filter-input filter-input-radio" id="fixed" type="radio" name="version" value="fixed">
+            <input class="visually-hidden filter-input filter-input-radio" id="fixed" type="radio" name="version" value="fixed" aria-label="Фиксированная">
             <label for="fixed">Фиксированная</label>
           </li>
           <li class="filter-option">
-            <input class="visually-hidden filter-input filter-input-radio" id="rubber" type="radio" name="version" value="rubber">
+            <input class="visually-hidden filter-input filter-input-radio" id="rubber" type="radio" name="version" value="rubber" aria-label="Резинованя">
             <label for="rubber">Резиновая</label>
           </li>
         </ul>
@@ -76,23 +76,23 @@
           <legend>Особенности:</legend>
           <ul class="reset-list">
             <li class="filter-checkbox">
-              <input class="visually-hidden filter-input filter-input-checkbox" id="slider" name="slide" type="checkbox" checked>
+              <input class="visually-hidden filter-input filter-input-checkbox" id="slider" name="slide" type="checkbox" checked aria-label="Слайдер">
               <label for="slider">Слайдер</label>
             </li>
             <li class="filter-checkbox">
-              <input class="visually-hidden filter-input filter-input-checkbox" id="benefits" name="benefits" type="checkbox">
+              <input class="visually-hidden filter-input filter-input-checkbox" id="benefits" name="benefits" type="checkbox" aria-label="Блок преимуществ">
               <label for="benefits">Блок преимуществ</label>
             </li>
             <li class="filter-checkbox">
-              <input class="visually-hidden filter-input filter-input-checkbox" id="news" name="news" type="checkbox" checked>
+              <input class="visually-hidden filter-input filter-input-checkbox" id="news" name="news" type="checkbox" checked aria-label="Новости">
               <label for="news">Новости</label>
             </li>
             <li class="filter-checkbox">
-              <input class="visually-hidden filter-input filter-input-checkbox" id="gallery" name="galler" type="checkbox">
+              <input class="visually-hidden filter-input filter-input-checkbox" id="gallery" name="galler" type="checkbox" aria-label="Галерея">
               <label for="gallery">Галерея</label>
             </li>
             <li class="filter-checkbox">
-              <input class="visually-hidden filter-input filter-input-checkbox" id="basket" name="basket" type="checkbox">
+              <input class="visually-hidden filter-input filter-input-checkbox" id="basket" name="basket" type="checkbox" aria-label="Корзина">
               <label for="basket">Корзина</label>
             </li>
           </ul>
@@ -110,8 +110,8 @@
           <li><a class="row-navigation-link" href="#">по цене</a></li>
           <li><a class="row-navigation-link" href="#">по типу</a></li>
           <li><a class="row-navigation-link" href="#">по названию</a></li>
-          <li><a class="row-navigation-icon" href="#"><img src="img/icon-down-dir.svg" width="11" height="10" alt=""></a></li>
-          <li><a class="row-navigation-icon-two" href="#"><img src="img/icon-up-dir.svg" width="11" height="10" alt=""></a></li>
+          <li><a class="row-navigation-icon" href="#"><img src="img/icon-down-dir.svg" width="11" height="10" aria-label="список вниз"></a></li>
+          <li><a class="row-navigation-icon-two" href="#"><img src="img/icon-up-dir.svg" width="11" height="10" aria-label="список вверх"></a></li>
         </ul>
       </div>
 
@@ -205,8 +205,8 @@
         </p>
         <a class="button map-button" href="#">Напишите нам</a>
       </div>
-      <img class="map" src="img/map.png" width="1440" height="416" alt="Офис компании по адресу: Санкт-Петербург,ул. Б. Конюшенная, д. 19/8"><!--background position relevant??-->
-      <img class="map-marker" src="img/map-marker.png" width="231" height="190" alt="Маркер"><!--class map-marker - css - position-absolut-->
+      <img class="map" src="img/map.png" width="1440" height="416" alt="Офис компании по адресу: Санкт-Петербург,ул. Б. Конюшенная, д. 19/8">
+      <img class="map-marker" src="img/map-marker.png" width="231" height="190" alt="Маркер">
     </section>
   </div>
 </main>
@@ -260,7 +260,7 @@
       <label class="feedback-label" for="login-text">Текст письма</label>
       <textarea class="feedback-field" id="login-text" placeholder="В свободной форме"></textarea>
     </p>
-    <button class="modal-button button" type="submit">Отправить</button>
+    <button class="modal-button button" type="submit" href="writeus.html">Отправить</button>
   </form>
   <button class="popup-close" type="button">
     <span class="visually-hidden">Закрыть</span>

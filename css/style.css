@@ -37,17 +37,13 @@ img {
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
   position: absolute;
-
   width: 1px;
   height: 1px;
   margin: -1px;
   border: 0;
   padding: 0;
-
   white-space: nowrap;
-
   -webkit-clip-path: inset(100%);
-
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
@@ -167,14 +163,11 @@ input[type="radio"].visually-hidden {
 
 .basket::before {
   content: "";
-
   position: absolute;
   top: 2px;
   left: 4px;
-
   width: 20px;
   height: 15px;
-
   background-image: url("../img/cart-icon.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -221,6 +214,7 @@ input[type="radio"].visually-hidden {
   margin-right: 17px;
   background-color: #fff;
   display: inline-block;
+  vertical-align: top;
   width: 18px;
   height: 18px;
 
@@ -230,38 +224,30 @@ input[type="radio"].visually-hidden {
 
 .slider-controls i::after {
   content: "";
-
   position: absolute;
   top: 4px;
   left: 4px;
   z-index: 1;
-
   width: 10px;
   height: 10px;
-
   background: #ffffff;
-
   border-radius: 50%;
 }
 
 .slider-controls .relevant::before {
   content: "";
-
   position: absolute;
   left: 60%;
   top: 60%;
   z-index: 2;
-
   width: 8px;
   height: 8px;
   margin: -6px;
-
   background-color: inherit;
   border: 2px solid #c1c1c1;
   border-radius: 50%;
 }
 
-/*catalog.html*/
 .active {
   border-bottom: 2px solid #fb565a;
   padding-bottom: 9px;
@@ -323,7 +309,6 @@ input[type="radio"].visually-hidden {
   text-transform: uppercase;
   text-align: center;
   text-decoration: none;
-
   background-color: #fb565a;
   border-radius: 3px;
   border: none;
@@ -336,7 +321,6 @@ input[type="radio"].visually-hidden {
 
 .button:active {
   color: rgba(255, 255, 255, 0.3);
-
   background-color: #d7373b;
   -webkit-box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
   box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
@@ -351,10 +335,6 @@ input[type="radio"].visually-hidden {
 
 .nerds-list {
   margin: 0 auto;
-  /*
-  padding: 0 10px;
-
-   */
   margin-top: 71px;
   margin-bottom: 77px;
 }
@@ -363,16 +343,9 @@ input[type="radio"].visually-hidden {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  /*
-  justify-content: space-around;
-   */
   min-height: 350px;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  /*margin: 0;
-  padding: 0;
-
-   */
 }
 
 .nerds-item {
@@ -383,7 +356,6 @@ input[type="radio"].visually-hidden {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  /*justify-content: space-around;*/
   -webkit-box-align: start;
   -ms-flex-align: start;
   align-items: flex-start;
@@ -491,10 +463,6 @@ input[type="radio"].visually-hidden {
 }
 
 .company-info {
-  /*
-  min-height: 524px;
-
-   */
   width: 756px;
   margin-top: 21px;
 }
@@ -526,11 +494,11 @@ input[type="radio"].visually-hidden {
 }
 
 .nerds-slogan ul {
+  position: relative;
   color: #283136;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
-  position: relative;
 }
 
 .order-list {
@@ -545,7 +513,7 @@ input[type="radio"].visually-hidden {
   width: 25px;
   height: 2px;
   background-color: #fb565a;
-} /*тут все что смог - нужен совет - линии в плотную не идут*/
+}
 
 .order-list-item {
   position: relative;
@@ -555,10 +523,6 @@ input[type="radio"].visually-hidden {
 
 .company-stats {
   margin-top: 30px;
-  /*
-  min-height: 524px;
-
-   */
   width: 358px;
 }
 
@@ -610,7 +574,7 @@ input[type="radio"].visually-hidden {
   font-size: 16px;
   font-weight: 400;
   line-height: 18px;
-} /*как это сделать отступы между 146 и уровень самоотдачи*/
+}
 
 .text-first {
   padding-top: 18px;
@@ -639,84 +603,86 @@ input[type="radio"].visually-hidden {
 }
 
 .partners-first {
+  position: relative;
   padding-left: 31px;
   padding-top: 16px;
-  position: relative;
 }
 
 .partners-second {
-  padding-left: 96px;
   position: relative;
+  padding-left: 96px;
 }
 
 .partners-third {
+  position: relative;
   padding-left: 103px;
   padding-top: 19px;
-  position: relative;
 }
 
 .partners-fourth {
+  position: relative;
   padding-left: 121px;
   padding-top: 6px;
-  position: relative;
+
 }
 
-
 .partners-first::after {
-  content: "";
-  width: 2px;
-  height: 52px;
-  background-color: #eeeeee;
   position: absolute;
   top: 18px;
   right: -51px;
+  content: "";
+  width: 2px;
+  height: 52px;
+  background-color: #eeeeee;
 }
 
 .partners-second::after {
-  content: "";
-  width: 2px;
-  height: 52px;
-  background-color: #eeeeee;
   position: absolute;
   top: 18px;
   right: -46px;
-}
-
-.partners-third::after {
   content: "";
   width: 2px;
   height: 52px;
   background-color: #eeeeee;
+}
+
+.partners-third::after {
   position: absolute;
   top: 18px;
   right: -58px;
+  content: "";
+  width: 2px;
+  height: 52px;
+  background-color: #eeeeee;
 }
 
 .nerds-partners-item:last-child::after{
   display: none;
 }
 
-.nerds-partners-item {
+.nerds-partners-item img{
   opacity: 0.2;
 }
 
-.nerds-partners-item:hover {
+.nerds-partners-item:hover img{
   opacity: 1;
 }
 
-.nerds-partners-item:active {
+.nerds-partners-item:active img{
   opacity: 0.1;
 }
 
-
 .map-container {
+  position: relative;
   min-width: 1440px;
   margin: 0 auto;
   min-height: 416px;
-  position: relative;
 }
 
 .nerds-contacts {
+  position: absolute;
+  top: 54px;
+  left: 140px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -724,15 +690,12 @@ input[type="radio"].visually-hidden {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  position: absolute;
   -webkit-box-align: start;
   -ms-flex-align: start;
   align-items: flex-start;
-  top: 54px;
-  left: 140px;
-  background-color: white;
   width: 319px;
   min-height: 308px;
+  background-color: white;
 }
 
 .nerds-contacts h4 {
@@ -767,10 +730,6 @@ input[type="radio"].visually-hidden {
   align-items: flex-start;
   margin-top: 36px;
   margin-left: 50px;
-  /*
-  margin-bottom: 47px;
-
-   */
   width: 219px;
 }
 
@@ -850,7 +809,6 @@ input[type="radio"].visually-hidden {
   font-size: 16px;
   font-weight: 400;
   line-height: 22px;
-  /*text-align: left;*/
 }
 
 .feature-item p {
@@ -862,11 +820,8 @@ input[type="radio"].visually-hidden {
   margin-bottom: 9px;
 }
 
-/*popup*/
-
 .modal {
   position: fixed;
-
   background-color: white;
   background-position: 0 0;
   background-repeat: repeat;
@@ -875,9 +830,7 @@ input[type="radio"].visually-hidden {
 }
 
 .modal-login {
-
   display: none;
-
   top: 60px;
   left: 50%;
   margin-left: -480px;
@@ -888,14 +841,14 @@ input[type="radio"].visually-hidden {
 }
 
 .popup-close {
+  position: absolute;
+  top: 75px;
+  right: 89px;
   width: 21px;
   height: 21px;
   background-image: url(../img/close-cross.svg);
   background-repeat: no-repeat;
   background-position: 0 0;
-  position: absolute;
-  top: 75px;
-  right: 89px;
   border: 0;
   opacity: 0.6;
   cursor: pointer;
@@ -966,12 +919,9 @@ input[type="radio"].visually-hidden {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   width: 100%;
-
   padding-top: 14px;
   padding-left: 15px;
-
   padding-bottom: 19px;
-
   font: inherit;
   text-transform: inherit;
   background-color: transparent;
@@ -984,14 +934,12 @@ input[type="radio"].visually-hidden {
   box-sizing: border-box;
   width: 100%;
   min-height: 118px;
-
   padding-top: 14px;
   padding-left: 15px;
   padding-right: 136px;
   padding-bottom: 21px;
   text-transform: inherit;
   font: inherit;
-
   background-color: transparent;
   border: 2px solid #d7dcde;
   opacity: 0.5;
@@ -1030,7 +978,7 @@ input[type="radio"].visually-hidden {
   cursor: pointer;
   background-color: transparent;
   border: 2px solid #e74246;
-  color: #e74246; /*почему то цвет не задает как в стайлгайде*/
+  color: #e74246;
 }
 
 .feedback-option textarea:invalid {
@@ -1039,9 +987,6 @@ input[type="radio"].visually-hidden {
   background-color: transparent;
   border: 2px solid #e74246;
 }
-
-/*разметка catalog.html*/
-
 
 .page-title {
   font-size: 55px;
@@ -1091,27 +1036,23 @@ input[type="radio"].visually-hidden {
 
 .range-controls {
   position: relative;
-
   height: 80px;
   margin-bottom: 19px;
   padding-top: 41px;
   padding-right: 20px;
   padding-left: 20px;
   background-color: #f1f1f1;
-
   border-radius: 5px;
 }
 
 .range-controls .scale {
   height: 2px;
-
   background: #d7dcde;
 }
 
 .range-controls .bar {
   width: 70%;
   height: 2px;
-
   background: #00ca74;
 }
 
@@ -1119,11 +1060,9 @@ input[type="radio"].visually-hidden {
   position: absolute;
   top: 31px;
   left: 10px;
-
   width: 4px;
   height: 4px;
   padding: 2px;
-
   border: 8px solid #ffffff;
   background-color: #ababab;
   -webkit-box-shadow: 0 2px 1px 0 #cfcfcf;
@@ -1147,7 +1086,7 @@ input[type="radio"].visually-hidden {
 .price-controls label {
   display: inline-block;
   width: 50%;
-
+  vertical-align: top;
   font-size: 16px;
   text-transform: uppercase;
 }
@@ -1156,12 +1095,10 @@ input[type="radio"].visually-hidden {
   width: 80px;
   padding: 8px 2px;
   margin-left: 8px;
-
   font-family: Roboto, Arial, sans-serif;
   font-size: 16px;
   text-align: center;
   color: #283136;
-
   border: none;
   border-radius: 5px;
   background: #f1f1f1;
@@ -1170,8 +1107,6 @@ input[type="radio"].visually-hidden {
 .max-price {
   text-align: right;
 }
-
-/* Сетка */
 
 .filter-first {
   padding-left: 0;
@@ -1188,24 +1123,24 @@ input[type="radio"].visually-hidden {
 }
 
 .filter-option label {
+  position: relative;
   padding-left: 34px;
   font-size: 16px;
   font-weight: 400;
   line-height: 19px;
   color: #283136;
-  position: relative;
   opacity: 0.6;
 }
 
 .filter-option label::before {
   content:"";
+  position: absolute;
+  left: -1px;
+  bottom: -1px;
   width: 25px;
   height: 25px;
   background-image: url("../img/radio-off.svg");
-  position: absolute;
   background-repeat: no-repeat;
-  left: -1px;
-  bottom: -1px;
 }
 
 .filter-option label:hover {
@@ -1220,15 +1155,8 @@ input[type="radio"].visually-hidden {
   background-image: url("../img/radio-on.svg");
 }
 
-
-
-
-/*---------------*/
-
-/*Особенности:*/
-
 .filter-features {
-  padding-left: 0px;
+  padding-left: 0;
 }
 
 .filter-features legend {
@@ -1243,23 +1171,23 @@ input[type="radio"].visually-hidden {
 }
 
 .filter-checkbox label {
+  position: relative;
   padding-left: 25px;
   font-size: 16px;
   font-weight: 400;
   line-height: 19px;
   color: #283136;
-  position: relative;
   opacity: 0.6;
 }
 
 .filter-checkbox label::before {
   content:"";
+  position: absolute;
+  left: -10px;
   width: 25px;
   height: 25px;
   background-image: url("../img/checkbox-off.svg");
-  position: absolute;
   background-repeat: no-repeat;
-  left: -10px;
 }
 
 .filter-checkbox label:hover {
@@ -1305,9 +1233,6 @@ input[type="radio"].visually-hidden {
   box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
 }
 
-/*----------------*/
-
-/*Сортировать*/
 .row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1382,10 +1307,6 @@ input[type="radio"].visually-hidden {
   opacity: 1;
 }
 
-/*-----------*/
-
-/*Каталог*/
-
 .catalog-list {
   margin-top: 49px;
 }
@@ -1403,13 +1324,14 @@ input[type="radio"].visually-hidden {
 }
 
 .catalog-item {
-  width: 360px;
+  position: relative;
   margin-top: 46px;
   margin-bottom: 22px;
   min-height: 576px;
   margin-right: 40px;
+  width: 360px;
   background-color: #ffffff;
-  position: relative;
+
 }
 
 .catalog-item:nth-child(2n) {
@@ -1418,12 +1340,13 @@ input[type="radio"].visually-hidden {
 
 .catalog-item::before {
   content:"";
+  position: absolute;
+  top: -40px;
   width: 360px;
   height: 40px;
   background-color: #eaeaea;
   background-image: url("../img/shape.png");
-  position: absolute;
-  top: -40px;
+
   opacity: 0.1;
 }
 
@@ -1504,17 +1427,11 @@ input[type="radio"].visually-hidden {
   background-color: #d7373b;
 }
 
-/*----------------------*/
-
-/*Пагинация*/
-
 .pagination-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 60px;
-
-  /* Временно для сетки */
   min-height: 50px;
 }
 
@@ -1589,7 +1506,6 @@ input[type="radio"].visually-hidden {
   background-color: #dfdfdf;
 }
 
-/*-----------------*/
 
 
 
