@@ -830,7 +830,7 @@ input[type="radio"].visually-hidden {
 }
 
 .modal-login {
-  display: none;
+  display: block;
   top: 60px;
   left: 50%;
   margin-left: -480px;
