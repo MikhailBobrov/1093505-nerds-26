@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Michael Bobrov](https://up.htmlacademy.ru/htmlcss/26/user/1093505).
-* Наставник: [Анна😁Лемина] (https://htmlacademy.ru/profile/id83874)
+* Наставник: [Анна Лемина] (https://htmlacademy.ru/profile/id83874)
 
 ---
 
