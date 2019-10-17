@@ -18,6 +18,7 @@ body {
 a {
   text-decoration: none;
 }
+
 *, *::after, *::before {
   -webkit-box-sizing: inherit;
   box-sizing: inherit;
