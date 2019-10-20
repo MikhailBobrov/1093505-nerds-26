@@ -1039,7 +1039,7 @@ input[type="radio"].visually-hidden {
 
 .range-filter {
   width: 260px;
-  margin-top: 49px;
+  margin-top: 50px;
 }
 
 .range-controls {
@@ -1380,7 +1380,7 @@ input[type="radio"].visually-hidden {
   font-size: 18px;
   font-weight: 700;
   line-height: 30px;
-  margin-top: 23px;
+  margin-top: 20px;
   margin-bottom: 0;
   text-transform: uppercase;
   text-align: center;
@@ -1416,7 +1416,7 @@ input[type="radio"].visually-hidden {
   min-height: 50px;
   padding: 15px 42px;
   margin-left: 80px;
-  margin-top: 30px;
+  margin-top: 32px;
   font-size: 16px;
   line-height: 18px;
   color: #ffffff;
