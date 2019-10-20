@@ -196,7 +196,7 @@ input[type="radio"].visually-hidden {
   display: flex;
   position: absolute;
   left: 53%;
-  bottom: 95px;
+  bottom: 98px;
   z-index: 100;
   width: 160px;
   height: 18px;
@@ -260,7 +260,7 @@ input[type="radio"].visually-hidden {
 .slider-item:nth-child(1) {
   background-image: url("../img/slide1.png");
   background-repeat: no-repeat;
-  background-position: 93% 17px;
+  background-position: 93% 18px;
 }
 
 .slider-item:nth-child(2) {
@@ -360,7 +360,7 @@ input[type="radio"].visually-hidden {
   align-items: flex-start;
   width: 300px;
   min-height: 350px;
-  margin-top: 9px;
+  margin-top: 7px;
   margin-right: 100px;
   background-color: rgba(0, 0, 0, 0);
 }
@@ -381,7 +381,7 @@ input[type="radio"].visually-hidden {
 
 .nerds-item p {
   margin-top: 0;
-  margin-bottom: 32px;
+  margin-bottom: 31px;
   color: #283136;
   max-width: 270px;
   font-size: 16px;
@@ -460,7 +460,7 @@ input[type="radio"].visually-hidden {
 
 .company-info {
   width: 756px;
-  margin-top: 21px;
+  margin-top: 18px;
 }
 
 .nerds-slogan h3 {
@@ -468,7 +468,7 @@ input[type="radio"].visually-hidden {
   font-size: 45px;
   font-weight: 500;
   line-height: 45px;
-  margin-bottom: 30px;
+  margin-bottom: 34px;
 }
 
 .nerds-slogan p {
@@ -518,13 +518,13 @@ input[type="radio"].visually-hidden {
 }
 
 .company-stats {
-  margin-top: 30px;
+  margin-top: 28px;
   width: 358px;
 }
 
 .company-stats h4 {
   margin-left: 14px;
-  margin-top: 30px;
+  margin-top: 32px;
   margin-bottom: 20px;
   font-size: 16px;
   font-weight: 700;
@@ -549,7 +549,6 @@ input[type="radio"].visually-hidden {
   font-size: 26px;
   font-weight: 700;
 }
-
 
 .stats-first {
   padding-top: 21px;
@@ -594,7 +593,7 @@ input[type="radio"].visually-hidden {
   margin-bottom: 80px;
   border-top: 2px solid #eeeeee; /* Параметры линии */
   border-bottom: 2px solid #eeeeee; /* Параметры линии */
-  padding-top: 46px; /* Расстояние от линии до текста */
+  padding-top: 47px; /* Расстояние от линии до текста */
   padding-bottom: 37px;
 }
 
@@ -669,9 +668,11 @@ input[type="radio"].visually-hidden {
 }
 
 .map {
-  padding-top: 54px;
+  padding-top: 52px;
   height: 416px;
   background-image: url("../img/map.png");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .nerds-contacts {
