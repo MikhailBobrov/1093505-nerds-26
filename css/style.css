@@ -11,7 +11,7 @@ body {
 
 html,
 body {
-  min-width: 1440px;
+
   min-height: 2476px;
 }
 
@@ -51,7 +51,7 @@ input[type="radio"].visually-hidden {
 }
 
 .container {
-  width: 1160px;
+  max-width: 1160px;
   margin: 0 auto;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -839,6 +839,17 @@ input[type="radio"].visually-hidden {
 
 .modal-login {
   display: none;
+  top: 60px;
+  left: 50%;
+  margin-left: -480px;
+  padding-left: 100px;
+  padding-right: 100px;
+  width: 960px;
+  min-height: 590px;
+}
+
+.modal-show {
+  display: block;
   top: 60px;
   left: 50%;
   margin-left: -480px;
