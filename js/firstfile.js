@@ -17,9 +17,10 @@ close.addEventListener("click", function (evt) {
 });
 
 form.addEventListener("submit", function (evt) {
-  evt.preventDefault();
-  console.log (login.value);
-  console.log (email.value);
+  if (!login.value || !email.value){
+    evt.preventDefault();
+    console.log ("Нужно ввести логин и email");
+  }
 });
 
 

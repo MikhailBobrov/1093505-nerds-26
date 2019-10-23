@@ -9,12 +9,6 @@ body {
   background-color: white;
 }
 
-html,
-body {
-
-  min-height: 2476px;
-}
-
 a {
   text-decoration: none;
 }
@@ -51,7 +45,9 @@ input[type="radio"].visually-hidden {
 }
 
 .container {
-  max-width: 1160px;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 1200px;
   margin: 0 auto;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -275,13 +271,17 @@ input[type="radio"].visually-hidden {
   background-position: 100% 20px;
 }
 
-.slider-item:nth-child(1) {
+.slider-item:nth-child(3) {
   display: block;
 }
 
 .slider-item-container {
+  max-width: 530px;
+  min-height: 355px;
+}
+
+.slider-item-text {
   max-width: 430px;
-  padding-bottom: 81px;
 }
 
 .slider-item h3 {
