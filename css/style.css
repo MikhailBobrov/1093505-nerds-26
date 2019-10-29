@@ -732,7 +732,7 @@ input[type="radio"].visually-hidden {
 
 .map-marker {
   position: absolute;
-  left: 680px;
+  left: 700px;
   top: 35px;
   background-color: rgba(0, 0, 0, 0);
   color: white;
